@@ -206,10 +206,10 @@ const Services: React.FC<ServicesProps> = ({ serviceSlug }) => {
         </section>
         
         {/* Service Process Section */}
-    <section className="bg-gray-50 h-[90vh] flex items-center">
+    <section className="bg-gray-50 h-[95vh] flex items-center">
   <div className="container mx-auto px-4">
     <div className="text-center mb-4">
-      <h2 className="text-2xl font-bold mb-2">Our Approach</h2>
+      <h2 className="text-3xl font-bold mb-2">Our Approach</h2>
       <p className="text-gray-600 text-sm max-w-2xl mx-auto">
         We follow a structured methodology to ensure comprehensive and actionable audit results.
       </p>
@@ -232,7 +232,7 @@ const Services: React.FC<ServicesProps> = ({ serviceSlug }) => {
               
               {/* Content box - reduced padding */}
               <div className="flex-grow bg-white rounded-md shadow-sm border-l-3 border-blue-600 p-3 hover:shadow-md transition-shadow duration-300">
-                <p className="text-gray-700 text-sm">{step}</p>
+                <p className="text-gray-700 text-md">{step}</p>
               </div>
             </div>
           </div>
