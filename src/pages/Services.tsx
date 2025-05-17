@@ -206,68 +206,71 @@ const Services: React.FC<ServicesProps> = ({ serviceSlug }) => {
         </section>
         
         {/* Service Process Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="bg-gray-50 h-[90vh] flex items-center">
   <div className="container mx-auto px-4">
-    <div className="text-center mb-12">
-      <h2 className="text-3xl font-bold mb-4">Our Approach</h2>
+    <div className="text-center mb-8">
+      <h2 className="text-3xl font-bold mb-3">Our Approach</h2>
       <p className="text-gray-600 max-w-2xl mx-auto">
         We follow a structured methodology to ensure comprehensive and actionable audit results.
       </p>
     </div>
     
-    <div className="max-w-5xl mx-auto">
-      {service.process.map((step, index) => (
-        <div key={index} className="relative mb-8 last:mb-0">
-          {/* Connecting line */}
-          {index < service.process.length - 1 && (
-            <div className="absolute left-10 top-16 bottom-0 w-1 bg-blue-400 hidden sm:block"></div>
-          )}
-          
-          <div className="flex flex-col sm:flex-row items-start gap-6">
-            {/* Number bubble */}
-            <div className="flex-shrink-0 bg-blue-600 text-white w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg z-10">
-              {index + 1}
-            </div>
+    <div className="max-w-5xl mx-auto overflow-y-auto max-h-[60vh] pr-2 hide-scrollbar">
+      <div className="space-y-5">
+        {service.process.map((step, index) => (
+          <div key={index} className="relative">
+            {/* Connecting line */}
+            {index < service.process.length - 1 && (
+              <div className="absolute left-10 top-16 bottom-0 w-1 bg-blue-400 hidden sm:block"></div>
+            )}
             
-            {/* Content box */}
-            <div className="flex-grow bg-white rounded-lg shadow-md border-l-4 border-blue-600 p-6 hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl font-semibold text-blue-800 mb-3">
-                {index === 0 ? 'Initial Assessment' : 
-                 index === service.process.length - 1 ? 'Final Delivery' : 
-                 `Phase ${index + 1}`}
-              </h3>
-              <p className="text-gray-700">{step}</p>
+            <div className="flex flex-col sm:flex-row items-start gap-5">
+              {/* Number bubble */}
+              <div className="flex-shrink-0 bg-blue-600 text-white w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg z-10">
+                {index + 1}
+              </div>
               
-              {/* Visual indicator for step completion */}
-              <div className="mt-4 flex items-center">
-                <div className="w-full bg-gray-200 h-1.5 rounded-full overflow-hidden">
-                  <div className="bg-blue-500 h-full rounded-full" style={{ width: `${(index + 1) / service.process.length * 100}%` }}></div>
-                </div>
-                <span className="ml-3 text-sm text-blue-600 font-medium">
-                  {Math.round((index + 1) / service.process.length * 100)}%
-                </span>
+              {/* Content box */}
+              <div className="flex-grow bg-white rounded-lg shadow-md border-l-4 border-blue-600 p-5 hover:shadow-xl transition-shadow duration-300">
+                <p className="text-gray-700">{step}</p>
               </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
     
-    {/* Call to action */}
-    <div className="text-center mt-12 bg-blue-50 rounded-xl p-8 max-w-4xl mx-auto shadow-md">
-      <h3 className="text-2xl font-bold text-blue-800 mb-4">Ready to Begin Your Journey?</h3>
-      <p className="text-gray-700 mb-6">Our structured approach ensures we deliver actionable insights that drive meaningful improvements.</p>
+    {/* Simple call to action */}
+    <div className="text-center mt-8">
       <Link 
         to="/contact" 
         className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-md transition-colors duration-300"
       >
-        Start the Process
+        Schedule a Consultation
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
           <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
         </svg>
       </Link>
     </div>
   </div>
+  
+  {/* Custom style for hiding scrollbar but allowing scroll */}
+  <style jsx>{`
+    .hide-scrollbar::-webkit-scrollbar {
+      width: 0.4rem;
+    }
+    .hide-scrollbar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .hide-scrollbar::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 1rem;
+    }
+    .hide-scrollbar {
+      scrollbar-width: thin;
+      scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
+    }
+  `}</style>
 </section>
 
         
