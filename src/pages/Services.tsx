@@ -206,27 +206,28 @@ const Services: React.FC<ServicesProps> = ({ serviceSlug }) => {
         </section>
         
         {/* Service Process Section */}
-        <section className="py-20 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold mb-4">Our Approach</h2>
-              <p className="text-gray-600 max-w-3xl mx-auto">
-                We follow a structured methodology to ensure comprehensive and actionable audit results.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {service.process.map((step, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-md p-8">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white font-bold text-lg mb-4">
-                    {index + 1}
-                  </div>
-                  <p className="text-gray-700">{step}</p>
-                </div>
-              ))}
-            </div>
+        <section className="py-12 bg-gray-50">
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-8">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-2">Our Step-by-Step Approach</h2>
+      <p className="text-gray-600 text-sm sm:text-base max-w-xl mx-auto">
+        Concise. Actionable. Efficient.
+      </p>
+    </div>
+
+    <div className="relative border-l-2 border-blue-500 pl-5 space-y-3">
+      {service.process.map((step, index) => (
+        <div key={index} className="flex items-start gap-3">
+          <div className="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-semibold mt-1">
+            {index + 1}
           </div>
-        </section>
+          <p className="text-gray-700 text-sm leading-tight">{step}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
         
         {/* CTA Section */}
         <section className="py-20 bg-blue-700 text-white">
