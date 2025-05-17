@@ -206,7 +206,7 @@ const Services: React.FC<ServicesProps> = ({ serviceSlug }) => {
         </section>
         
         {/* Service Process Section */}
-    <section className="bg-gray-50 h-[95vh] flex items-center">
+    <section className="bg-gray-50 h-[95vh] py-4 lg:py-2 flex items-center">
   <div className="container mx-auto px-4">
     <div className="text-center mb-6">
       <h2 className="text-3xl font-bold mb-3">Our Approach</h2>
