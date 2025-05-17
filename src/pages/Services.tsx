@@ -206,33 +206,33 @@ const Services: React.FC<ServicesProps> = ({ serviceSlug }) => {
         </section>
         
         {/* Service Process Section */}
-      <section className="bg-gray-50 h-[90vh] flex items-center">
+    <section className="bg-gray-50 h-[90vh] flex items-center">
   <div className="container mx-auto px-4">
-    <div className="text-center mb-8">
-      <h2 className="text-3xl font-bold mb-3">Our Approach</h2>
-      <p className="text-gray-600 max-w-2xl mx-auto">
+    <div className="text-center mb-4">
+      <h2 className="text-2xl font-bold mb-2">Our Approach</h2>
+      <p className="text-gray-600 text-sm max-w-2xl mx-auto">
         We follow a structured methodology to ensure comprehensive and actionable audit results.
       </p>
     </div>
     
-    <div className="max-w-5xl mx-auto overflow-y-auto max-h-[60vh] pr-2 hide-scrollbar">
-      <div className="space-y-5">
+    <div className="max-w-4xl mx-auto">
+      <div className="space-y-3">
         {service.process.map((step, index) => (
           <div key={index} className="relative">
-            {/* Connecting line */}
+            {/* Connecting line - thinner */}
             {index < service.process.length - 1 && (
-              <div className="absolute left-10 top-16 bottom-0 w-1 bg-blue-400 hidden sm:block"></div>
+              <div className="absolute left-6 top-10 bottom-0 w-0.5 bg-blue-400 hidden sm:block"></div>
             )}
             
-            <div className="flex flex-col sm:flex-row items-start gap-5">
-              {/* Number bubble */}
-              <div className="flex-shrink-0 bg-blue-600 text-white w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg z-10">
+            <div className="flex flex-col sm:flex-row items-start gap-3">
+              {/* Number bubble - smaller size */}
+              <div className="flex-shrink-0 bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-base font-bold shadow-md z-10">
                 {index + 1}
               </div>
               
-              {/* Content box */}
-              <div className="flex-grow bg-white rounded-lg shadow-md border-l-4 border-blue-600 p-5 hover:shadow-xl transition-shadow duration-300">
-                <p className="text-gray-700">{step}</p>
+              {/* Content box - reduced padding */}
+              <div className="flex-grow bg-white rounded-md shadow-sm border-l-3 border-blue-600 p-3 hover:shadow-md transition-shadow duration-300">
+                <p className="text-gray-700 text-sm">{step}</p>
               </div>
             </div>
           </div>
@@ -240,37 +240,19 @@ const Services: React.FC<ServicesProps> = ({ serviceSlug }) => {
       </div>
     </div>
     
-    {/* Simple call to action */}
-    <div className="text-center mt-8">
+    {/* Simple call to action - smaller */}
+    <div className="text-center mt-4">
       <Link 
         to="/contact" 
-        className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-md transition-colors duration-300"
+        className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-md text-sm transition-colors duration-300"
       >
         Schedule a Consultation
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
           <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
         </svg>
       </Link>
     </div>
   </div>
-  
-  {/* Custom style for hiding scrollbar but allowing scroll */}
-  <style jsx>{`
-    .hide-scrollbar::-webkit-scrollbar {
-      width: 0.4rem;
-    }
-    .hide-scrollbar::-webkit-scrollbar-track {
-      background: transparent;
-    }
-    .hide-scrollbar::-webkit-scrollbar-thumb {
-      background-color: rgba(0, 0, 0, 0.1);
-      border-radius: 1rem;
-    }
-    .hide-scrollbar {
-      scrollbar-width: thin;
-      scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
-    }
-  `}</style>
 </section>
 
         
