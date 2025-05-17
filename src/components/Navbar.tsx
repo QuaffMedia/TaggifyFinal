@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
          
-            <span className={`font-bold text-xl  ${isScrolled ? 'text-gray-800' : 'text-white'}`}>
+            <span className={`font-bold text-xl mr-2 ${isScrolled ? 'text-gray-800' : 'text-white'}`}>
               Taggify
             </span>
           </Link>
