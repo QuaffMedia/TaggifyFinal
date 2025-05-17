@@ -205,29 +205,29 @@ const Services: React.FC<ServicesProps> = ({ serviceSlug }) => {
           </div>
         </section>
         
-        {/* Service Process Section */}
-        <section className="py-12 bg-gray-50">
+   <section className="min-h-screen py-24 bg-gray-50 flex items-center">
   <div className="container mx-auto px-4">
-    <div className="text-center mb-2">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-2">Our Step-by-Step Approach</h2>
-      <p className="text-gray-600 text-sm sm:text-base max-w-xl mx-auto">
-        Concise. Actionable. Efficient.
+    <div className="text-center mb-20">
+      <h2 className="text-4xl font-bold mb-4">Our Step-by-Step Approach</h2>
+      <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+        A strategic and structured methodology tailored to improve performance, compliance, and operational integrity.
       </p>
     </div>
 
-    <div className="relative border-l-2 border-blue-500 pl-5 space-y-2">
+    <div className="relative border-l-4 border-blue-600 pl-10 space-y-16 max-w-4xl mx-auto">
       {service.process.map((step, index) => (
-        <div key={index} className="flex items-start gap-3">
-          <div className="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-semibold mt-1">
+        <div key={index} className="relative flex items-start group">
+          <div className="absolute -left-8 top-0 w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-semibold shadow-lg">
             {index + 1}
           </div>
-          <p className="text-gray-700 text-xs leading-tight">{step}</p>
+          <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100 w-full transition hover:shadow-lg">
+            <p className="text-gray-800 text-lg leading-relaxed">{step}</p>
+          </div>
         </div>
       ))}
     </div>
   </div>
 </section>
-
         
         {/* CTA Section */}
         <section className="py-20 bg-blue-700 text-white">
