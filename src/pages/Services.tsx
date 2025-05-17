@@ -226,7 +226,7 @@ const Services: React.FC<ServicesProps> = ({ serviceSlug }) => {
             
             <div className="flex flex-col sm:flex-row items-start gap-4">
               {/* Number bubble - medium size */}
-              <div className="flex-shrink-0 bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-xl font-bold shadow-md z-10">
+              <div className="flex-shrink-0 bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-xl font-bold shadow-md z-10">
                 {index + 1}
               </div>
               
