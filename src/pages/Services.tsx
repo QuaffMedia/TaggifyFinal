@@ -208,20 +208,20 @@ const Services: React.FC<ServicesProps> = ({ serviceSlug }) => {
         {/* Service Process Section */}
         <section className="py-12 bg-gray-50">
   <div className="container mx-auto px-4">
-    <div className="text-center mb-8">
+    <div className="text-center mb-2">
       <h2 className="text-2xl sm:text-3xl font-bold mb-2">Our Step-by-Step Approach</h2>
       <p className="text-gray-600 text-sm sm:text-base max-w-xl mx-auto">
         Concise. Actionable. Efficient.
       </p>
     </div>
 
-    <div className="relative border-l-2 border-blue-500 pl-5 space-y-3">
+    <div className="relative border-l-2 border-blue-500 pl-5 space-y-2">
       {service.process.map((step, index) => (
         <div key={index} className="flex items-start gap-3">
           <div className="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-semibold mt-1">
             {index + 1}
           </div>
-          <p className="text-gray-700 text-sm leading-tight">{step}</p>
+          <p className="text-gray-700 text-xs leading-tight">{step}</p>
         </div>
       ))}
     </div>
