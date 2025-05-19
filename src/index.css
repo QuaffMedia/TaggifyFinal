@@ -48,24 +48,15 @@ body {
   animation: fadeIn 0.8s ease 0.9s forwards;
   opacity: 0;
 }
-@keyframes slide-left {
+@keyframes scroll-left {
   0% {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
-.animate-slide-left {
-  animation: slide-left 8s linear infinite;
-}
-
-.scrollbar-hide {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
+.animate-scroll-left {
+  animation: scroll-left 20s linear infinite;
 }
