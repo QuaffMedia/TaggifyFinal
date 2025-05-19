@@ -119,48 +119,37 @@ const Clients: React.FC = () => {
       </section>
       
       {/* Industries We Serve Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Industries We Serve</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              We work with a wide range of businesses serving Global clients across various industries.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
-              <img src="https://images.pexels.com/photos/7709087/pexels-photo-7709087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Customer Support" className="w-20 h-20 object-cover rounded-full mx-auto mb-4" />
-              <h3 className="font-semibold">Customer Support</h3>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
-              <img src="https://images.pexels.com/photos/6476810/pexels-photo-6476810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Financial Services" className="w-20 h-20 object-cover rounded-full mx-auto mb-4" />
-              <h3 className="font-semibold">Financial Services</h3>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
-              <img src="https://images.pexels.com/photos/315791/pexels-photo-315791.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Healthcare" className="w-20 h-20 object-cover rounded-full mx-auto mb-4" />
-              <h3 className="font-semibold">Healthcare</h3>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
-              <img src="https://images.pexels.com/photos/4342498/pexels-photo-4342498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="E-commerce" className="w-20 h-20 object-cover rounded-full mx-auto mb-4" />
-              <h3 className="font-semibold">E-commerce</h3>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
-              <img src="https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Technology" className="w-20 h-20 object-cover rounded-full mx-auto mb-4" />
-              <h3 className="font-semibold">Technology</h3>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
-              <img src="https://images.pexels.com/photos/2422294/pexels-photo-2422294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Legal Services" className="w-20 h-20 object-cover rounded-full mx-auto mb-4" />
-              <h3 className="font-semibold">Legal Services</h3>
-            </div>
-          </div>
+      <section className="py-20 bg-gray-50 overflow-hidden">
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">Clients We’ve Worked With</h2>
+      <p className="text-gray-600 max-w-3xl mx-auto">
+        A glimpse of organizations we’ve proudly served across public and private sectors.
+      </p>
+    </div>
+
+    <div className="flex space-x-6 animate-slide-left overflow-x-auto scrollbar-hide">
+      {[
+        { name: "Indian Oil Corporation", logo: "https://upload.wikimedia.org/wikipedia/en/0/00/Indian_Oil_Logo.svg" },
+        { name: "HPCL", logo: "https://upload.wikimedia.org/wikipedia/en/e/ed/HPCL_logo.svg" },
+        { name: "Ministry of HRD", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Emblem_of_India.svg/768px-Emblem_of_India.svg.png" },
+        { name: "NIC", logo: "https://upload.wikimedia.org/wikipedia/commons/7/77/National_Informatics_Centre_Logo.png" },
+        { name: "Delhi Govt", logo: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Seal_of_Delhi.svg" },
+        { name: "ICICI Bank", logo: "https://upload.wikimedia.org/wikipedia/en/3/3b/ICICI_Bank_Logo.svg" },
+        { name: "Reliance Telecom", logo: "https://upload.wikimedia.org/wikipedia/en/2/2e/Reliance_Industries_Logo.svg" },
+        { name: "Honda Cars", logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Honda_logo.svg" },
+        { name: "Whirlpool", logo: "https://upload.wikimedia.org/wikipedia/commons/1/14/Whirlpool_logo.svg" },
+        { name: "Amul", logo: "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Amul_Logo.svg/2560px-Amul_Logo.svg.png" }
+      ].map((client, index) => (
+        <div key={index} className="flex-shrink-0 bg-white rounded-lg shadow-md p-6 text-center w-48 hover:shadow-xl transition-all duration-300">
+          <img src={client.logo} alt={client.name} className="w-16 h-16 object-contain mx-auto mb-4" />
+          <h3 className="font-semibold text-sm">{client.name}</h3>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
       
       {/* Case Studies Section */}
       <section className="py-20 bg-white">
