@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
               <li><Link to="/services/kpo" className="text-gray-400 hover:text-white transition-colors">KPO Compliance Verification</Link></li>
               <li><Link to="/services/social-media" className="text-gray-400 hover:text-white transition-colors">Social Media Operations Audit</Link></li>
               <li><Link to="/services/data-security" className="text-gray-400 hover:text-white transition-colors">Data Security Compliance</Link></li>
-               <li><Link to="/services/data-security" className="text-gray-400 hover:text-white transition-colors">Call Centre Process </Link></li>
+            
             </ul>
           </div>
 
