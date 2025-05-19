@@ -147,10 +147,9 @@ const Clients: React.FC = () => {
             {
               name: "Reliance Communications",
               logo: "https://logonoid.com/images/reliance-communications-logo.png"
-            },
-            {
+            }, {
               name: "Honda Cars",
-              logo: "https://pin.it/6WTo9g2wG"
+              logo: "https://www.logo.wine/a/logo/Honda_Cars_India/Honda_Cars_India-Logo.wine.svg"
             },
             {
               name: "Whirlpool",
