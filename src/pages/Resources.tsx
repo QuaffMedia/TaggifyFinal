@@ -43,7 +43,7 @@ const Resources: React.FC = () => {
     {
       title: "Preparing for US Client Audits: A Comprehensive Guide",
       date: "April 10, 2023",
-      excerpt: "US clients often conduct their own audits of outsourced operations. This guide helps you prepare effectively and navigate the audit process successfully.",
+      excerpt: "Global clients often conduct their own audits of outsourced operations. This guide helps you prepare effectively and navigate the audit process successfully.",
       link: "#",
       image: "https://images.pexels.com/photos/4386442/pexels-photo-4386442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     }
@@ -51,7 +51,7 @@ const Resources: React.FC = () => {
 
   const faqs = [
     {
-      question: "What compliance regulations apply to Indian BPOs serving US clients?",
+      question: "What compliance regulations apply to Indian BPOs serving Global clients?",
       answer: "Indian BPOs serving Global clients must comply with various regulations depending on the industry and data handled. These may include GDPR (for international customers), CCPA, HIPAA (for healthcare data), PCI DSS (for payment information), and SOX (for financial data). Additionally, they must adhere to Indian regulations such as the Information Technology Act and any industry-specific requirements."
     },
     {
