@@ -130,7 +130,10 @@ const Clients: React.FC = () => {
 
     <div className="flex space-x-6 animate-slide-left overflow-x-auto scrollbar-hide">
       {[
-        { name: "Indian Oil Corporation", logo: "https://upload.wikimedia.org/wikipedia/en/0/00/Indian_Oil_Logo.svg" },
+        {
+          name: "Indian Oil Corporation",
+          logo: "https://upload.wikimedia.org/wikipedia/en/0/00/Indian_Oil_Logo.svg"
+        },
         { name: "HPCL", logo: "https://upload.wikimedia.org/wikipedia/en/e/ed/HPCL_logo.svg" },
         { name: "Ministry of HRD", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Emblem_of_India.svg/768px-Emblem_of_India.svg.png" },
         { name: "NIC", logo: "https://upload.wikimedia.org/wikipedia/commons/7/77/National_Informatics_Centre_Logo.png" },
