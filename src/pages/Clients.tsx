@@ -69,12 +69,12 @@ const Clients: React.FC = () => {
     {
       title: "Social Media Compliance Overhaul",
       client: "Digital Marketing Agency",
-      challenge: "Repeated policy violations and content compliance issues in social media management for US brands.",
+      challenge: "Repeated policy violations and content compliance issues in social media management for Global brands.",
       solution: "Audit of content processes and compliance protocols, followed by implementation of structured approval workflows and compliance training.",
       results: [
         "85% reduction in policy violations",
         "Improved client satisfaction scores",
-        "Secured three new major US clients"
+        "Secured three new major Global clients"
       ]
     }
   ];
