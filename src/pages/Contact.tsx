@@ -65,7 +65,7 @@ const Contact: React.FC = () => {
                     <Clock className="text-blue-600" size={20} />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Business Hours</h3>
+                    <h3 className="font-semibold mb-1">Business Hours (IST) </h3>
                     <p className="text-gray-600">
                       Monday - Friday: 9:00 AM - 6:00 PM
                     </p>
