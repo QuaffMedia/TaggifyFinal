@@ -138,7 +138,7 @@ const Clients: React.FC = () => {
             },
             {
               name: "Hindustan Petroleum Corporation",
-              logo: "https://companieslogo.com/img/orig/HINDPETRO.NS_BIG-0a9e5b8b.png"
+              logo: "https://www.hindustanpetroleum.com/images/logo.png"
             },
             {
               name: "Ministry of Education",
