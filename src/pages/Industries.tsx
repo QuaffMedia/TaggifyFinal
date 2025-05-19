@@ -125,7 +125,7 @@ const Industries: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Understanding Industry-Specific Compliance</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Each industry serving US clients has unique compliance requirements that must be addressed through specialized audit approaches.
+              Each industry serving Global clients has unique compliance requirements that must be addressed through specialized audit approaches.
             </p>
           </div>
           
