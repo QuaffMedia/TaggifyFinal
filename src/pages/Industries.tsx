@@ -93,7 +93,7 @@ const Industries: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Industry Expertise</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              We provide specialized audit solutions for a wide range of operations that serve US clients, with deep expertise in the unique compliance requirements and operational challenges of each industry.
+              We provide specialized audit solutions for a wide range of operations that serve Global clients, with deep expertise in the unique compliance requirements and operational challenges of each industry.
             </p>
           </div>
           
