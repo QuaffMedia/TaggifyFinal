@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   return (
     <div>
       <Hero 
-        title="Leading Audit Services for Global Client-Facing Operations in India"
+        title="Leading Audit Services for Global Client-Facing Operations"
         subtitle="Led by ex-Big Four professionals, we provide compliance-driven audit solutions for BPOs, KPOs, and social media agencies—building trust between Indian teams and Global clients."
         backgroundImage="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       />
