@@ -137,7 +137,7 @@ const Clients: React.FC = () => {
               logo: "https://iocl.com/images/logo.png"
             },
             {
-              name: "Hindustan Petroleum Corporation",
+              name: "Hindustan Petroleum ",
               logo: "https://www.hindustanpetroleum.com/images/logo.png"
             },
             {
