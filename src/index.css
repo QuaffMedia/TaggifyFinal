@@ -58,7 +58,7 @@ body {
 }
 
 .animate-slide-left {
-  animation: slide-left 25s linear infinite;
+  animation: slide-left 8s linear infinite;
 }
 
 .scrollbar-hide {
