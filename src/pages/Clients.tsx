@@ -157,6 +157,10 @@ const Clients: React.FC = () => {
               name: "Whirlpool",
               logo: "https://1000logos.net/wp-content/uploads/2021/05/Whirlpool-logo.png"
             },
+            {
+              name: "Amul",
+              logo: "https://1000logos.net/wp-content/uploads/2021/05/Amul-logo.png"
+            }
           ])
           .flat()
           .map((client, index) => (
