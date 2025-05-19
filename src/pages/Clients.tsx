@@ -132,26 +132,61 @@ const Clients: React.FC = () => {
       {[
         {
           name: "Indian Oil Corporation",
-          logo: "https://upload.wikimedia.org/wikipedia/en/0/00/Indian_Oil_Logo.svg"
+          logo: "https://iocl.com/images/logo.png"
         },
-        { name: "HPCL", logo: "https://upload.wikimedia.org/wikipedia/en/e/ed/HPCL_logo.svg" },
-        { name: "Ministry of HRD", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Emblem_of_India.svg/768px-Emblem_of_India.svg.png" },
-        { name: "NIC", logo: "https://upload.wikimedia.org/wikipedia/commons/7/77/National_Informatics_Centre_Logo.png" },
-        { name: "Delhi Govt", logo: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Seal_of_Delhi.svg" },
-        { name: "ICICI Bank", logo: "https://upload.wikimedia.org/wikipedia/en/3/3b/ICICI_Bank_Logo.svg" },
-        { name: "Reliance Telecom", logo: "https://upload.wikimedia.org/wikipedia/en/2/2e/Reliance_Industries_Logo.svg" },
-        { name: "Honda Cars", logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Honda_logo.svg" },
-        { name: "Whirlpool", logo: "https://upload.wikimedia.org/wikipedia/commons/1/14/Whirlpool_logo.svg" },
-        { name: "Amul", logo: "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Amul_Logo.svg/2560px-Amul_Logo.svg.png" }
+        {
+          name: "Hindustan Petroleum Corporation",
+          logo: "https://www.hindustanpetroleum.com/images/logo.png"
+        },
+        {
+          name: "Ministry of Education",
+          logo: "https://www.education.gov.in/sites/upload_files/mhrd/files/logo.png"
+        },
+        {
+          name: "National Informatics Centre",
+          logo: "https://www.nic.in/wp-content/uploads/2020/12/NIC-logo.png"
+        },
+        {
+          name: "Government of Delhi NCT",
+          logo: "https://delhi.gov.in/sites/default/files/inline-images/delhi_govt_logo.png"
+        },
+        {
+          name: "ICICI Bank",
+          logo: "https://www.icicibank.com/assets/images/logo.png"
+        },
+        {
+          name: "Reliance Communications",
+          logo: "https://www.relianceada.com/images/logo.png"
+        },
+        {
+          name: "Honda Cars",
+          logo: "https://www.hondacarindia.com/images/logo.png"
+        },
+        {
+          name: "Whirlpool",
+          logo: "https://www.whirlpoolindia.com/images/logo.png"
+        },
+        {
+          name: "Amul",
+          logo: "https://www.amul.com/images/logo.png"
+        }
       ].map((client, index) => (
-        <div key={index} className="flex-shrink-0 bg-white rounded-lg shadow-md p-6 text-center w-48 hover:shadow-xl transition-all duration-300">
-          <img src={client.logo} alt={client.name} className="w-16 h-16 object-contain mx-auto mb-4" />
+        <div
+          key={index}
+          className="flex-shrink-0 bg-white rounded-lg shadow-md p-6 text-center w-48 hover:shadow-xl transition-all duration-300"
+        >
+          <img
+            src={client.logo}
+            alt={client.name}
+            className="w-16 h-16 object-contain mx-auto mb-4"
+          />
           <h3 className="font-semibold text-sm">{client.name}</h3>
         </div>
       ))}
     </div>
   </div>
 </section>
+
 
       
       {/* Case Studies Section */}
