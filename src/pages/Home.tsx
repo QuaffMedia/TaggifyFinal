@@ -8,6 +8,32 @@ import { ClipboardCheck, ShieldCheck, BarChart3, Lock, Zap, Search } from 'lucid
 import { Link } from '../components/Link';
 
 const Home: React.FC = () => {
+   const testimonials = [
+    {
+      quote: "At LEO1 by Financepeer, we're transforming education finance through innovation and trust—empowering students and institutions with sustainable solutions to make quality education accessible to all. Our journey has just begun",
+      author: "Rohit Gajbhiye",
+      position: "Founder",
+      company: "LEO1 by Financepeer",
+      linkedin: "https://in.linkedin.com/in/rohitgajbhiye03"
+    },
+    {
+      quote: "The audit team's deep understanding of KPO operations and US compliance requirements provided us with actionable insights that significantly improved our quality standards.",
+      author: "Anuj Bajpai",
+      position: "CEO",
+      company: "Hungama Digital Entertainment",
+      linkedin: "https://in.linkedin.com/in/anuj-bajpai"
+    },
+    
+    {
+      quote: "The audit team's strong grasp of KPO processes and US compliance standards delivered valuable insights that greatly enhanced our operational quality.",
+      author: "Ojasvi Babber",
+      position: "CEO",
+      company: " Amity Venture Funds",
+      linkedin: "https://in.linkedin.com/in/ojasvi"
+    },
+    
+    
+  ];
   return (
     <div>
       <Hero 
@@ -212,42 +238,44 @@ const Home: React.FC = () => {
       </section>
       
       {/* Testimonials Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Discover how our audit services have helped businesses improve their operations and compliance.
+              Hear from businesses that have partnered with us to enhance their operations and compliance.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <TestimonialCard 
-              quote="At LEO1 by Financepeer, we're transforming education finance through innovation and trust—empowering students and institutions with sustainable solutions to make quality education accessible to all. Our journey has just begun."
-              author="Rohit Gajbhiye "
-              position="Founder"
-              company="LEO1 by Financepeer"
-            />
-            
-            <TestimonialCard 
-              quote="The audit team's deep understanding of KPO operations and US compliance requirements provided us with actionable insights that significantly improved our quality standards."
-              author="Anuj Bajpai"
-              position="COO"
-              company="Hungama Digital Entertainment"
-            />
-            
-            <TestimonialCard 
-              quote="Their social media operations audit was eye-opening. They identified several compliance risks we weren't aware of and provided clear guidance on how to address them."
-              author="Vikram Singh"
-              position="Head of Digital"
-              company="SocialEdge Management"
-            />
-          </div>
-          
-          <div className="text-center mt-12">
-            <Link to="/clients" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors duration-300">
-              See More Client Testimonials
-            </Link>
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow flex flex-col h-full">
+                <div className="flex-grow mb-4">
+                  <p className="text-gray-700 italic">"{testimonial.quote}"</p>
+                </div>
+                <div className="mt-auto flex items-center">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl">
+                    {testimonial.author.charAt(0)}
+                  </div>
+                  <div className="ml-4 min-w-0">
+                    <div className="flex items-center">
+                      <h4 className="font-semibold truncate">{testimonial.author}</h4>
+                      <a 
+                        href={testimonial.linkedin} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="ml-2 flex-shrink-0 text-blue-600 hover:text-blue-800"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">
+                          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                      </a>
+                    </div>
+                    <p className="text-gray-600 text-sm truncate">{testimonial.position}, {testimonial.company}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
