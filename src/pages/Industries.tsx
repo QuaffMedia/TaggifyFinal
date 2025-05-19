@@ -146,7 +146,7 @@ const Industries: React.FC = () => {
                 Global clients expect consistent, high-quality outputs that meet specific standards and requirements, particularly in knowledge-intensive operations like research and analysis.
               </p>
               <p className="text-gray-600">
-                Our audits assess quality management systems, review processes, output consistency, and error rates to ensure operations meet US client expectations.
+                Our audits assess quality management systems, review processes, output consistency, and error rates to ensure operations meet Global client expectations.
               </p>
             </div>
             
