@@ -150,7 +150,7 @@ const Clients: React.FC = () => {
             },
             {
               name: "Honda Cars",
-              logo: "https://images.app.goo.gl/Y93NoqwjFaXacAvV7"
+              logo: "https://pin.it/6WTo9g2wG"
             },
             {
               name: "Whirlpool",
