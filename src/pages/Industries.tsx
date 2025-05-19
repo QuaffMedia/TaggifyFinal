@@ -83,7 +83,7 @@ const Industries: React.FC = () => {
     <div>
       <Hero 
         title="Industries We Serve"
-        subtitle="Specialized audit solutions tailored to the unique needs of different operational models serving US clients."
+        subtitle="Specialized audit solutions tailored to the unique needs of different operational models serving Global clients."
         backgroundImage="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       />
       
