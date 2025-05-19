@@ -117,7 +117,7 @@ const Clients: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Industries We Serve</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              We work with a wide range of businesses serving US clients across various industries.
+              We work with a wide range of businesses serving Global clients across various industries.
             </p>
           </div>
           
