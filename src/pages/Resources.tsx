@@ -196,7 +196,7 @@ const Resources: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">New US Data Security Requirements for Offshore Service Providers</h3>
               <p className="text-gray-600 mb-4">
-                The US Federal Trade Commission has announced new guidelines for companies outsourcing data processing activities to offshore service providers, with implications for Indian operations serving US clients.
+                The US Federal Trade Commission has announced new guidelines for companies outsourcing data processing activities to offshore service providers, with implications for Indian operations serving Global clients.
               </p>
               <p className="text-gray-600 mb-4">
                 The guidelines specify enhanced due diligence requirements, more stringent data protection provisions in service agreements, and increased monitoring obligations for US companies working with offshore service providers.
@@ -224,7 +224,7 @@ const Resources: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Answers to common questions about compliance and operational requirements for businesses serving US clients.
+              Answers to common questions about compliance and operational requirements for businesses serving Global clients.
             </p>
           </div>
           
