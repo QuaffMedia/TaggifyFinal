@@ -48,3 +48,16 @@ body {
   animation: fadeIn 0.8s ease 0.9s forwards;
   opacity: 0;
 }
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide-left {
+  animation: slide-left 25s linear infinite;
+}
