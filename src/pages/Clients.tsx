@@ -120,7 +120,7 @@ const Clients: React.FC = () => {
       
       {/* Industries We Serve Section */}
      <section className="py-20 bg-gray-50 overflow-hidden">
-  <div className="w-full px-3">
+  <div className="w-full px-3 lg:px-16">
     <div className="text-center mb-16">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">Clients We’ve Worked With</h2>
       <p className="text-gray-600 max-w-3xl mx-auto">
