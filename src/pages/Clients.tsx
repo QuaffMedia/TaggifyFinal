@@ -162,19 +162,7 @@ const Clients: React.FC = () => {
             },
             {
               name: "Honda Cars",
-              logo: "@keyframes scroll-left {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.animate-scroll-left {
-  animation: scroll-left 20s linear infinite;
-}
-"
+              logo: "https://www.logo.wine/a/logo/Honda_Cars_India/Honda_Cars_India-Logo.wine.svg"
             },
             {
               name: "Whirlpool",
