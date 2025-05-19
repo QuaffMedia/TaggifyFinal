@@ -119,7 +119,7 @@ const Clients: React.FC = () => {
       </section>
       
       {/* Industries We Serve Section */}
-      <section className="py-20 bg-gray-50 overflow-hidden">
+     <section className="py-20 bg-gray-50 overflow-hidden">
   <div className="w-full px-3">
     <div className="text-center mb-16">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">Clients We’ve Worked With</h2>
@@ -128,64 +128,70 @@ const Clients: React.FC = () => {
       </p>
     </div>
 
-    <div className="flex space-x-6 overflow-x-auto animate-slide-left scrollbar-hide">
-      {[
-        {
-          name: "Indian Oil Corporation",
-          logo: "https://iocl.com/images/logo.png"
-        },
-        {
-          name: "Hindustan Petroleum Corporation",
-          logo: "https://www.hindustanpetroleum.com/images/logo.png"
-        },
-        {
-          name: "Ministry of Education",
-          logo: "https://www.education.gov.in/sites/upload_files/mhrd/files/logo.png"
-        },
-        {
-          name: "National Informatics Centre",
-          logo: "https://www.nic.in/wp-content/uploads/2020/12/NIC-logo.png"
-        },
-        {
-          name: "Government of Delhi NCT",
-          logo: "https://delhi.gov.in/sites/default/files/inline-images/delhi_govt_logo.png"
-        },
-        {
-          name: "ICICI Bank",
-          logo: "https://www.icicibank.com/assets/images/logo.png"
-        },
-        {
-          name: "Reliance Communications",
-          logo: "https://www.relianceada.com/images/logo.png"
-        },
-        {
-          name: "Honda Cars",
-          logo: "https://www.hondacarindia.com/images/logo.png"
-        },
-        {
-          name: "Whirlpool",
-          logo: "https://www.whirlpoolindia.com/images/logo.png"
-        },
-        {
-          name: "Amul",
-          logo: "https://www.amul.com/images/logo.png"
-        }
-      ].map((client, index) => (
-        <div
-          key={index}
-          className="flex-shrink-0 bg-white rounded-lg shadow-md p-6 text-center w-48 hover:shadow-xl transition-all duration-300"
-        >
-          <img
-            src={client.logo}
-            alt={client.name}
-            className="w-16 h-16 object-contain mx-auto mb-4"
-          />
-          <h3 className="font-semibold text-sm">{client.name}</h3>
-        </div>
-      ))}
+    <div className="relative w-full overflow-hidden">
+      <div className="flex animate-scroll-left whitespace-nowrap">
+        {Array(2)
+          .fill([
+            {
+              name: "Indian Oil Corporation",
+              logo: "https://1000logos.net/wp-content/uploads/2021/05/Indian-Oil-logo.png"
+            },
+            {
+              name: "Hindustan Petroleum Corporation",
+              logo: "https://companieslogo.com/img/orig/HINDPETRO.NS_BIG-0a9e5b8b.png"
+            },
+            {
+              name: "Ministry of Education",
+              logo: "https://www.education.gov.in/sites/upload_files/mhrd/files/logo.png"
+            },
+            {
+              name: "National Informatics Centre",
+              logo: "https://www.nic.in/wp-content/uploads/2020/12/NIC-logo.png"
+            },
+            {
+              name: "Government of Delhi NCT",
+              logo: "https://delhi.gov.in/sites/default/files/inline-images/delhi_govt_logo.png"
+            },
+            {
+              name: "ICICI Bank",
+              logo: "https://companieslogo.com/img/orig/ICICIBANK.NS_BIG-0a9e5b8b.png"
+            },
+            {
+              name: "Reliance Communications",
+              logo: "https://logonoid.com/images/reliance-communications-logo.png"
+            },
+            {
+              name: "Honda Cars",
+              logo: "https://www.logo.wine/a/logo/Honda_Cars_India/Honda_Cars_India-Logo.wine.svg"
+            },
+            {
+              name: "Whirlpool",
+              logo: "https://1000logos.net/wp-content/uploads/2021/05/Whirlpool-logo.png"
+            },
+            {
+              name: "Amul",
+              logo: "https://1000logos.net/wp-content/uploads/2021/05/Amul-logo.png"
+            }
+          ])
+          .flat()
+          .map((client, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 bg-white rounded-lg shadow-md p-6 text-center w-48 mx-2"
+            >
+              <img
+                src={client.logo}
+                alt={client.name}
+                className="w-16 h-16 object-contain mx-auto mb-4"
+              />
+              <h3 className="font-semibold text-sm">{client.name}</h3>
+            </div>
+          ))}
+      </div>
     </div>
   </div>
 </section>
+
 
 
 
