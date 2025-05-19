@@ -136,7 +136,7 @@ const Contact: React.FC = () => {
               <div className="bg-white rounded-lg shadow-md p-6">
                 <h3 className="text-lg font-semibold mb-3">Can you help with specific industry compliance requirements?</h3>
                 <p className="text-gray-600">
-                  Yes, our team has expertise in various industry-specific compliance requirements, including those for financial services, healthcare, e-commerce, and technology sectors serving US clients.
+                  Yes, our team has expertise in various industry-specific compliance requirements, including those for financial services, healthcare, e-commerce, and technology sectors serving Global clients.
                 </p>
               </div>
             </div>
