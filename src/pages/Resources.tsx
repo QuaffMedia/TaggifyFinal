@@ -8,13 +8,13 @@ const Resources: React.FC = () => {
     {
       icon: <FileText size={40} className="text-blue-600" />,
       title: "US-India BPO Compliance Guide",
-      description: "A comprehensive guide to understanding compliance requirements for Indian BPO operations serving US clients.",
+      description: "A comprehensive guide to understanding compliance requirements for Indian BPO operations serving Global clients.",
       downloadLink: "#"
     },
     {
       icon: <FileText size={40} className="text-blue-600" />,
       title: "Data Security Best Practices",
-      description: "Essential security practices for protecting sensitive data in outsourced operations serving US clients.",
+      description: "Essential security practices for protecting sensitive data in outsourced operations serving Global clients.",
       downloadLink: "#"
     },
     {
@@ -29,7 +29,7 @@ const Resources: React.FC = () => {
     {
       title: "Understanding CCPA Requirements for Indian BPOs",
       date: "June 15, 2023",
-      excerpt: "The California Consumer Privacy Act (CCPA) has significant implications for Indian BPOs serving US clients. This article explains the key requirements and how to ensure compliance.",
+      excerpt: "The California Consumer Privacy Act (CCPA) has significant implications for Indian BPOs serving Global clients. This article explains the key requirements and how to ensure compliance.",
       link: "#",
       image: "https://images.pexels.com/photos/3760810/pexels-photo-3760810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
@@ -52,18 +52,18 @@ const Resources: React.FC = () => {
   const faqs = [
     {
       question: "What compliance regulations apply to Indian BPOs serving US clients?",
-      answer: "Indian BPOs serving US clients must comply with various regulations depending on the industry and data handled. These may include GDPR (for international customers), CCPA, HIPAA (for healthcare data), PCI DSS (for payment information), and SOX (for financial data). Additionally, they must adhere to Indian regulations such as the Information Technology Act and any industry-specific requirements."
+      answer: "Indian BPOs serving Global clients must comply with various regulations depending on the industry and data handled. These may include GDPR (for international customers), CCPA, HIPAA (for healthcare data), PCI DSS (for payment information), and SOX (for financial data). Additionally, they must adhere to Indian regulations such as the Information Technology Act and any industry-specific requirements."
     },
     {
       question: "How often should we conduct internal audits?",
-      answer: "For operations serving US clients, we recommend conducting comprehensive internal audits at least annually, with smaller check-in audits quarterly or semi-annually. This ensures ongoing compliance and allows for timely identification of emerging issues. High-risk operations or those handling sensitive data may require more frequent audits."
+      answer: "For operations serving Global clients, we recommend conducting comprehensive internal audits at least annually, with smaller check-in audits quarterly or semi-annually. This ensures ongoing compliance and allows for timely identification of emerging issues. High-risk operations or those handling sensitive data may require more frequent audits."
     },
     {
       question: "What should we do to prepare for a client audit?",
       answer: "To prepare for a client audit, ensure all documentation is up to date, including process documentation, training records, security protocols, and compliance certifications. Conduct a pre-audit review to identify and address potential issues. Prepare your team by briefing them on the audit scope and ensuring key personnel are available. Finally, create a comfortable environment for the auditors and be transparent in all interactions."
     },
     {
-      question: "What are the key security requirements for handling US customer data?",
+      question: "What are the key security requirements for handling Global customer data?",
       answer: "Key security requirements include implementing strong access controls, data encryption (both in transit and at rest), secure authentication mechanisms, regular security assessments, comprehensive logging and monitoring, incident response procedures, and regular security training for staff. You should also maintain physical security measures for your facilities and ensure proper data backup and recovery procedures."
     },
     {
