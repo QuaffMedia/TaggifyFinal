@@ -143,7 +143,7 @@ const Industries: React.FC = () => {
             <div className="bg-white rounded-lg shadow-md p-8">
               <h3 className="text-xl font-semibold mb-4">Quality Management</h3>
               <p className="text-gray-600 mb-6">
-                US clients expect consistent, high-quality outputs that meet specific standards and requirements, particularly in knowledge-intensive operations like research and analysis.
+                Global clients expect consistent, high-quality outputs that meet specific standards and requirements, particularly in knowledge-intensive operations like research and analysis.
               </p>
               <p className="text-gray-600">
                 Our audits assess quality management systems, review processes, output consistency, and error rates to ensure operations meet US client expectations.
