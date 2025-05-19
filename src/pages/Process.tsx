@@ -24,7 +24,7 @@ const Process: React.FC = () => {
     },
     {
       question: "How often should we conduct an audit?",
-      answer: "For operations serving US clients, we recommend conducting a comprehensive audit annually, with smaller check-in audits quarterly or semi-annually. This ensures ongoing compliance and allows for timely identification of emerging issues."
+      answer: "For operations serving Global clients, we recommend conducting a comprehensive audit annually, with smaller check-in audits quarterly or semi-annually. This ensures ongoing compliance and allows for timely identification of emerging issues."
     },
     {
       question: "Can you help with preparing for client audits?",
