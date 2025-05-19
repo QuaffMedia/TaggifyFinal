@@ -113,7 +113,7 @@ const Navbar: React.FC = () => {
                     <Link to="/services/kpo" className="text-gray-700 hover:text-blue-700">KPO Compliance</Link>
                     <Link to="/services/social-media" className="text-gray-700 hover:text-blue-700">Social Media Audits</Link>
                     <Link to="/services/data-security" className="text-gray-700 hover:text-blue-700">Data Security</Link>
-                    <Link to="/services/call-centre" className="text-gray-700 hover:text-blue-700">Call Centre Process</Link>
+{/*                     <Link to="/services/call-centre" className="text-gray-700 hover:text-blue-700">Call Centre Process</Link> */}
                   </div>
                 )}
               </div>
