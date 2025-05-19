@@ -20,9 +20,9 @@ const Home: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted Audit Partner for Global-Focused Operations</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted Audit Partner for global-Focused Operations</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Taggify is a registered Indian audit agency specializing in evaluating and improving operational compliance for businesses serving Global clients.
+              Taggify is a registered Indian audit agency specializing in evaluating and improving operational compliance for businesses serving global clients.
             </p>
           </div>
           
