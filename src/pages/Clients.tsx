@@ -152,10 +152,6 @@ const Clients: React.FC = () => {
               logo: "https://www.logo.wine/a/logo/Honda_Cars_India/Honda_Cars_India-Logo.wine.svg"
             },
             {
-              name: "Whirlpool",
-              logo: "https://1000logos.net/wp-content/uploads/2021/05/Whirlpool-logo.png"
-            },
-            {
               name: "Amul",
               logo: "https://1000logos.net/wp-content/uploads/2021/05/Amul-logo.png"
             }
