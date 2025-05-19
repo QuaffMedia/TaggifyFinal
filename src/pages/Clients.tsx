@@ -128,7 +128,7 @@ const Clients: React.FC = () => {
       </p>
     </div>
 
-    <div className="flex space-x-6 overflow-x-auto animate-left scrollbar-hide">
+    <div className="flex space-x-6 overflow-x-auto animate-slide-left scrollbar-hide">
       {[
         {
           name: "Indian Oil Corporation",
