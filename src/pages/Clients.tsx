@@ -148,10 +148,7 @@ const Clients: React.FC = () => {
               name: "National Informatics Centre",
               logo: "https://www.nic.in/wp-content/uploads/2020/12/NIC-logo.png"
             },
-            {
-              name: "Government of Delhi NCT",
-              logo: "https://delhi.gov.in/sites/default/files/inline-images/delhi_govt_logo.png"
-            },
+            
             {
               name: "ICICI Bank",
               logo: "https://companieslogo.com/img/orig/ICICIBANK.NS_BIG-0a9e5b8b.png"
