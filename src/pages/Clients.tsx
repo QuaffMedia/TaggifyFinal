@@ -162,7 +162,7 @@ const Clients: React.FC = () => {
             },
             {
               name: "Honda Cars",
-              logo: "https://www.logo.wine/a/logo/Honda_Cars_India/Honda_Cars_India-Logo.wine.svg"
+              logo: "https://images.app.goo.gl/Y93NoqwjFaXacAvV7"
             },
             {
               name: "Whirlpool",
