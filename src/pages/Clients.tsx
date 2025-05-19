@@ -134,7 +134,7 @@ const Clients: React.FC = () => {
           .fill([
             {
               name: "Indian Oil Corporation",
-              logo: "https://1000logos.net/wp-content/uploads/2021/05/Indian-Oil-logo.png"
+              logo: "https://iocl.com/images/logo.png"
             },
             {
               name: "Hindustan Petroleum Corporation",
