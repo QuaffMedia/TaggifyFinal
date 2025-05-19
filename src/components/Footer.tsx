@@ -15,9 +15,9 @@ const Footer: React.FC = () => {
             </div>
             <p className="text-gray-400 mb-4">
               Specialized audit services for BPO, KPO, and Social Media operations serving Global clients.
-            {/* </p>
+            </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              {/* <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -25,9 +25,9 @@ const Footer: React.FC = () => {
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook size={20} />
-              </a>
+              </a> */}
             </div>
-          </div> */}
+          </div>
 
           {/* Quick Links */}
           <div>
