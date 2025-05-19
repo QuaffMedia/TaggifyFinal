@@ -145,9 +145,6 @@ const Clients: React.FC = () => {
               logo: "https://www.education.gov.in/sites/upload_files/mhrd/files/logo.png"
             },
             {
-              name: "ICICI Bank",
-              logo: "https://companieslogo.com/img/orig/ICICIBANK.NS_BIG-0a9e5b8b.png"
-            },
             {
               name: "Reliance Communications",
               logo: "https://logonoid.com/images/reliance-communications-logo.png"
@@ -160,10 +157,6 @@ const Clients: React.FC = () => {
               name: "Whirlpool",
               logo: "https://1000logos.net/wp-content/uploads/2021/05/Whirlpool-logo.png"
             },
-            {
-              name: "Amul",
-              logo: "https://1000logos.net/wp-content/uploads/2021/05/Amul-logo.png"
-            }
           ])
           .flat()
           .map((client, index) => (
