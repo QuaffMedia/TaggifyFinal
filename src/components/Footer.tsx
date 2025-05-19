@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
             </div>
             <p className="text-gray-400 mb-4">
               Specialized audit services for BPO, KPO, and Social Media operations serving Global clients.
-            </p>
+            {/* </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
                 <Facebook size={20} />
               </a>
             </div>
-          </div>
+          </div> */}
 
           {/* Quick Links */}
           <div>
