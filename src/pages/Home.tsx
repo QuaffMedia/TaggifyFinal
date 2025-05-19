@@ -278,7 +278,7 @@ const Home: React.FC = () => {
                   {/* Google Maps iframe commented out */}
                 </div>
                 
-                <h3 className="text-xl font-bold mb-4">Business Hours</h3>
+                <h3 className="text-xl font-bold mb-4">Business Hours (IST)</h3>
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div>
                     <p className="font-medium">Monday - Friday</p>
