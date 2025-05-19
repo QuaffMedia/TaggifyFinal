@@ -44,7 +44,7 @@ const Industries: React.FC = () => {
     {
       icon: <MessageSquare size={40} className="text-blue-600" />,
       title: "Social Media Content Management",
-      description: "Comprehensive audits for social media management operations serving US clients, ensuring content compliance, account security, and adherence to platform policies.",
+      description: "Comprehensive audits for social media management operations serving Global clients, ensuring content compliance, account security, and adherence to platform policies.",
       benefits: [
         "Content compliance and quality assessment",
         "Platform policy adherence verification",
