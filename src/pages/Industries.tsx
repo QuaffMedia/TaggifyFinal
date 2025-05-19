@@ -153,7 +153,7 @@ const Industries: React.FC = () => {
             <div className="bg-white rounded-lg shadow-md p-8">
               <h3 className="text-xl font-semibold mb-4">Information Security</h3>
               <p className="text-gray-600 mb-6">
-                Operations serving US clients must implement robust information security measures to protect sensitive data and intellectual property, often requiring certification against standards like ISO 27001.
+                Operations serving Global clients must implement robust information security measures to protect sensitive data and intellectual property, often requiring certification against standards like ISO 27001.
               </p>
               <p className="text-gray-600">
                 Our audits evaluate security controls, incident response procedures, vulnerability management, and employee security awareness to ensure comprehensive protection.
