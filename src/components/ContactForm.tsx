@@ -54,7 +54,7 @@ const ContactForm: React.FC = () => {
   <input type="hidden" name="_next" value="https://taggifyaudit.com/thank-you" />
 
       <div className="mb-8">
-        <h3 className="text-2xl font-bold mb-2">Get in Touch</h3>
+        <h3 className="text-2xl font-bold mb-2">get in Touch</h3>
         <p className="text-gray-600">
           Have questions about our audit services? Fill out the form below and our team will get back to you shortly.
         </p>
