@@ -43,7 +43,16 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-lg p-8" id="contact-form">
+    <form
+  action="https://formsubmit.co/info@taggifyaudit.com"
+  method="POST"
+  className="bg-white rounded-lg shadow-lg p-8"
+  id="contact-form"
+>
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_subject" value="New Contact Submission - TrustAudit" />
+  <input type="hidden" name="_next" value="https://taggifyaudit.com/thank-you" />
+
       <div className="mb-8">
         <h3 className="text-2xl font-bold mb-2">Get in Touch</h3>
         <p className="text-gray-600">
