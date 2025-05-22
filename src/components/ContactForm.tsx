@@ -39,7 +39,7 @@ const ContactForm: React.FC = () => {
           _captcha: false,
         }),
       });
-
+      console.log("submitted")
       if (response.ok) {
         setSubmitSuccess(true);
         setFormData({
