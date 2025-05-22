@@ -52,9 +52,10 @@ const ContactForm: React.FC = () => {
   <input type="hidden" name="_captcha" value="false" />
   <input type="hidden" name="_subject" value="New Contact Submission - TrustAudit" />
   <input type="hidden" name="_next" value="https://taggifyaudit.com/thank-you" />
+<input type="hidden" name="_from" value="TrustAudit Website" />
 
       <div className="mb-8">
-        <h3 className="text-2xl font-bold mb-2">get in Touch</h3>
+        <h3 className="text-2xl font-bold mb-2">Get in Touch</h3>
         <p className="text-gray-600">
           Have questions about our audit services? Fill out the form below and our team will get back to you shortly.
         </p>
