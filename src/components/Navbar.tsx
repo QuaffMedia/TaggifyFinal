@@ -62,9 +62,12 @@ const Navbar: React.FC = () => {
             <Link to="/about" className={linkClasses}>About Us</Link>
             <div className="relative services-dropdown">
               <button 
-                className={`flex items-center ${linkClasses}`}
-                onClick={toggleServicesDropdown}
-              >
+  className="text-gray-800 font-medium mb-2 flex items-center"
+  onClick={(e) => {
+    e.stopPropagation();
+    toggleServicesDropdown();
+  }}
+>
                 Services <ChevronDown size={16} className="ml-1" />
               </button>
               {showServicesDropdown && (
