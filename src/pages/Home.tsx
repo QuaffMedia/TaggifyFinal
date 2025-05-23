@@ -10,7 +10,7 @@ import { Link } from '../components/Link';
 const Home: React.FC = () => {
    const testimonials = [
     {
-      quote: "At LEO1 by Financepeer, we're transforming education finance through innovation and trust—empowering students and institutions with sustainable solutions to make quality education accessible to all. Our journey has just begun",
+      quote: "Taggify helped us build instant credibility, ensuring transparency and trust—essential pillars for scaling our impact with confidence and integrity.",
       author: "Rohit Gajbhiye",
       position: "Founder",
       company: "LEO1 by Financepeer",
