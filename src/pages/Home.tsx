@@ -25,8 +25,8 @@ const Home: React.FC = () => {
     },
     
     {
-      quote: "Taggify’s auditors brought clarity and precision, helping us identify blind spots and implement changes that transformed how we maintain excellence and compliance.
-",
+      quote: "Taggify’s auditors brought clarity and precision, helping us identify blind spots and implement changes that transformed how we maintain excellence and compliance."
+,
       author: "Ojasvi Babber",
       position: "CEO",
       company: " Amity Venture Funds",
