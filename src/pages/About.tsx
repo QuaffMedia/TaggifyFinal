@@ -113,7 +113,7 @@ const About: React.FC = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold">Rahul Verma</h3>
+              <h3 className="text-xl font-semibold">Rohit Goel</h3>
               <p className="text-blue-600 mb-3">Chief Executive Officer</p>
               <p className="text-gray-600 max-w-xs mx-auto">
                 15+ years of experience in audit and compliance consulting for multinational operations.
