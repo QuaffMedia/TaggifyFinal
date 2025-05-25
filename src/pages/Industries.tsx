@@ -20,11 +20,11 @@ const Industries: React.FC = () => {
     {
       icon: <FileText size={40} className="text-blue-600" />,
       title: "Back-office Processing Centers",
-      description: "Thorough evaluation of data processing, form handling, and transaction processing operations, ensuring accuracy, security, and compliance with US standards.",
+      description: "Thorough evaluation of data processing, form handling, and transaction processing operations, ensuring accuracy, security, and compliance with Global standards.",
       benefits: [
         "Data accuracy and quality assessment",
         "Process efficiency evaluation",
-        "Compliance with US data handling requirements",
+        "Compliance with global data handling requirements",
         "Security protocols verification",
         "Error rate analysis and reduction strategies"
       ]
@@ -133,7 +133,7 @@ const Industries: React.FC = () => {
             <div className="bg-white rounded-lg shadow-md p-8">
               <h3 className="text-xl font-semibold mb-4">Data Privacy & Security</h3>
               <p className="text-gray-600 mb-6">
-                Operations handling US customer data must comply with regulations like CCPA, GDPR (for international customers), and industry-specific requirements like HIPAA for healthcare data.
+                Operations handling global customer data must comply with regulations like CCPA, GDPR (for international customers), and industry-specific requirements like HIPAA for healthcare data.
               </p>
               <p className="text-gray-600">
                 Our audits verify the implementation of appropriate technical safeguards, access controls, encryption, and data handling protocols to maintain compliance.
