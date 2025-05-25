@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import { Link } from './Link';
+import { Link } from 'react-router-dom';
+
 
 interface ServiceCardProps {
   icon: React.ReactNode;
