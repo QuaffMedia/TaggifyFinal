@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center mb-3">
                 <Mail className="mr-2 text-blue-500" size={18} />
-                <a href="mailto:info@tagify.in" className="text-gray-400 hover:text-white transition-colors">audit@taggify.com</a>
+                <a href="mailto:info@tagify.in" className="text-gray-400 hover:text-white transition-colors">info@taggifyaudit.com</a>
               </div>
             </address>
           </div>
