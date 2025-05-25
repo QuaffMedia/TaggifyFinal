@@ -46,7 +46,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
               <Shield className="mr-3 text-blue-400" size={24} />
               <span>Certified Audit Experts</span>
             </div>
-            <div className="flex text-xs items-center">
+            <div className="flex text-sm items-center">
               <Award className="mr-3 text-blue-400" size={24} />
               <span>Recognized Industry Experts</span>
             </div>
