@@ -8,7 +8,7 @@ const About: React.FC = () => {
     <div>
       <Hero 
         title="About Taggify"
-        subtitle="We are a specialized audit agency committed to ensuring compliance and operational excellence for businesses serving Global clients."
+        subtitle="We are a specialized audit agency committed to ensuring compliance and operational excellence for businesses serving global clients."
         backgroundImage="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       />
       
@@ -56,7 +56,7 @@ const About: React.FC = () => {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Company Informaton</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Company Information</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
               Taggify is a legally registered business entity operating under Indian law, providing professional audit services with full compliance.
             </p>
