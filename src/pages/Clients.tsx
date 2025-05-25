@@ -251,7 +251,7 @@ const Clients: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white rounded-lg shadow-md p-8 text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-4">50+</div>
+              <div className="text-5xl font-bold text-blue-600 mb-4">35+</div>
               <h3 className="text-xl font-semibold mb-2">Clients Served</h3>
               <p className="text-gray-600">
                 We've partnered with over 50 businesses serving Global Clients across various industries.
