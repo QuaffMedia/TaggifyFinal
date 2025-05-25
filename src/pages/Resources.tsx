@@ -8,13 +8,13 @@ const Resources: React.FC = () => {
     {
       icon: <FileText size={40} className="text-blue-600" />,
       title: "US-India BPO Compliance Guide",
-      description: "A comprehensive guide to understanding compliance requirements for Indian BPO operations serving Global clients.",
+      description: "A comprehensive guide to understanding compliance requirements for Indian BPO operations serving Global Clients.",
       downloadLink: "#"
     },
     {
       icon: <FileText size={40} className="text-blue-600" />,
       title: "Data Security Best Practices",
-      description: "Essential security practices for protecting sensitive data in outsourced operations serving Global clients.",
+      description: "Essential security practices for protecting sensitive data in outsourced operations serving Global Clients.",
       downloadLink: "#"
     },
     {
@@ -29,7 +29,7 @@ const Resources: React.FC = () => {
     {
       title: "Understanding CCPA Requirements for Indian BPOs",
       date: "June 15, 2023",
-      excerpt: "The California Consumer Privacy Act (CCPA) has significant implications for Indian BPOs serving Global clients. This article explains the key requirements and how to ensure compliance.",
+      excerpt: "The California Consumer Privacy Act (CCPA) has significant implications for Indian BPOs serving Global Clients. This article explains the key requirements and how to ensure compliance.",
       link: "#",
       image: "https://images.pexels.com/photos/3760810/pexels-photo-3760810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
@@ -43,7 +43,7 @@ const Resources: React.FC = () => {
     {
       title: "Preparing for Global Client Audits: A Comprehensive Guide",
       date: "April 10, 2023",
-      excerpt: "Global clients often conduct their own audits of outsourced operations. This guide helps you prepare effectively and navigate the audit process successfully.",
+      excerpt: "Global Clients often conduct their own audits of outsourced operations. This guide helps you prepare effectively and navigate the audit process successfully.",
       link: "#",
       image: "https://images.pexels.com/photos/4386442/pexels-photo-4386442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     }
@@ -51,12 +51,12 @@ const Resources: React.FC = () => {
 
   const faqs = [
     {
-      question: "What compliance regulations apply to Indian BPOs serving Global clients?",
-      answer: "Indian BPOs serving Global clients must comply with various regulations depending on the industry and data handled. These may include GDPR (for international customers), CCPA, HIPAA (for healthcare data), PCI DSS (for payment information), and SOX (for financial data). Additionally, they must adhere to Indian regulations such as the Information Technology Act and any industry-specific requirements."
+      question: "What compliance regulations apply to Indian BPOs serving Global Clients?",
+      answer: "Indian BPOs serving Global Clients must comply with various regulations depending on the industry and data handled. These may include GDPR (for international customers), CCPA, HIPAA (for healthcare data), PCI DSS (for payment information), and SOX (for financial data). Additionally, they must adhere to Indian regulations such as the Information Technology Act and any industry-specific requirements."
     },
     {
       question: "How often should we conduct internal audits?",
-      answer: "For operations serving Global clients, we recommend conducting comprehensive internal audits at least annually, with smaller check-in audits quarterly or semi-annually. This ensures ongoing compliance and allows for timely identification of emerging issues. High-risk operations or those handling sensitive data may require more frequent audits."
+      answer: "For operations serving Global Clients, we recommend conducting comprehensive internal audits at least annually, with smaller check-in audits quarterly or semi-annually. This ensures ongoing compliance and allows for timely identification of emerging issues. High-risk operations or those handling sensitive data may require more frequent audits."
     },
     {
       question: "What should we do to prepare for a client audit?",
@@ -164,7 +164,7 @@ const Resources: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Compliance Updates</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Stay current with the latest regulatory changes affecting outsourced operations serving Global clients.
+              Stay current with the latest regulatory changes affecting outsourced operations serving Global Clients.
             </p>
           </div>
           
@@ -179,7 +179,7 @@ const Resources: React.FC = () => {
                 The California Attorney General's office has released updated enforcement guidelines for the California Consumer Privacy Act (CCPA), providing clarification on several key compliance areas affecting businesses that process data of California residents.
               </p>
               <p className="text-gray-600 mb-4">
-                The updated guidelines place increased emphasis on data inventory requirements, consent management, and vendor oversight. Businesses serving Global clients must ensure their data handling practices align with these updated requirements.
+                The updated guidelines place increased emphasis on data inventory requirements, consent management, and vendor oversight. Businesses serving Global Clients must ensure their data handling practices align with these updated requirements.
               </p>
               <a 
                 href="#" 
@@ -196,7 +196,7 @@ const Resources: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">New US Data Security Requirements for Offshore Service Providers</h3>
               <p className="text-gray-600 mb-4">
-                The US Federal Trade Commission has announced new guidelines for companies outsourcing data processing activities to offshore service providers, with implications for Indian operations serving Global clients.
+                The US Federal Trade Commission has announced new guidelines for companies outsourcing data processing activities to offshore service providers, with implications for Indian operations serving Global Clients.
               </p>
               <p className="text-gray-600 mb-4">
                 The guidelines specify enhanced due diligence requirements, more stringent data protection provisions in service agreements, and increased monitoring obligations for US companies working with offshore service providers.
@@ -224,7 +224,7 @@ const Resources: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Answers to common questions about compliance and operational requirements for businesses serving Global clients.
+              Answers to common questions about compliance and operational requirements for businesses serving Global Clients.
             </p>
           </div>
           
