@@ -33,7 +33,7 @@ const isHome = location.pathname === '/';
           
           <div className="flex flex-col sm:flex-row gap-4 mb-16 animate-fade-in-delay-2">
             <a
-              href="#contact-form"
+              to='/contact'
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-md transition-colors duration-300 text-center"
             >
               Schedule a Consultation
