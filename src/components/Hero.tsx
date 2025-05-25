@@ -31,12 +31,13 @@ const isHome = location.pathname === '/';
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-16 animate-fade-in-delay-2">
-            <a
+            {isHome && 
+             (<a
              href="#contact-form"
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-md transition-colors duration-300 text-center"
             >
               Schedule a Consultation
-            </a>
+            </a>)}
             {isHome && (
     <a
       href="#services"
