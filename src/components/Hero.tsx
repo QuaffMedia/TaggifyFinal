@@ -12,7 +12,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
     <div
       className="relative min-h-screen flex items-center text-white"
       style={{
-        backgroundImage: linear-gradient(rgba(0, 0, 32, 0.7), rgba(0, 0, 32, 0.8)), url(${backgroundImage}),
+        backgroundImage: `linear-gradient(rgba(0, 0, 32, 0.7), rgba(0, 0, 32, 0.8)), url(${backgroundImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
