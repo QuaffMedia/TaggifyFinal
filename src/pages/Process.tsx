@@ -180,7 +180,7 @@ const Process: React.FC = () => {
               
               <div className="order-1 md:order-2 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.pexels.com/photos/7681891/pexels-photo-7681891.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                  src="https://images.pexels.com/photos/955390/pexels-photo-955390.jpeg" 
                   alt="Documentation process"
                   className="w-full h-auto"
                 />
