@@ -6,12 +6,11 @@ import { Link } from '../components/Link';
 const About: React.FC = () => {
   return (
     <div>
-      <Hero 
+      <Hero  
         title="About Taggify"
         subtitle="We are a specialized audit agency committed to ensuring compliance and operational excellence for businesses serving Global Clients."
         backgroundImage="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-         consultationLink="/#contact-form"
-  servicesLink="/#services"
+        
       />
       
       {/* Mission and Vision Section */}
