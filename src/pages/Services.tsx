@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
 import { ClipboardCheck, Search, BarChart3, Lock, Zap, ShieldCheck } from 'lucide-react';
 import { Link } from '../components/Link';
+import { useParams } from 'react-router-dom';
 
 interface ServicesProps {
   serviceSlug?: string;
