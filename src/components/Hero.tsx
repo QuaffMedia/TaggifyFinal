@@ -22,7 +22,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight animate-fade-in">
             {title}
           </h1>
-          <p className="text-xl md:text-2xl mb-10 text-gray-200 leading-relaxed animate-fade-in-delay">
+          <p className="text-xl md:text-2x l mb-10 text-gray-200 leading-relaxed animate-fade-in-delay">
             {subtitle}
           </p>
           
