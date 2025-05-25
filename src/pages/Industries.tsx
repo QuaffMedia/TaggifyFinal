@@ -206,7 +206,7 @@ const Industries: React.FC = () => {
             <div className="bg-gray-50 rounded-lg shadow-md p-8">
               <h3 className="text-xl font-semibold mb-3">KPO Data Security Enhancement</h3>
               <p className="text-gray-700 mb-4">
-                A KPO providing research and analysis services to US legal firms faced challenges with data security and intellectual property protection. Our audit revealed vulnerabilities in access controls, data transfer protocols, and IP protection measures.
+                A KPO providing research and analysis services to global legal firms faced challenges with data security and intellectual property protection. Our audit revealed vulnerabilities in access controls, data transfer protocols, and IP protection measures.
               </p>
               <p className="text-gray-700 mb-4">
                 We recommended a comprehensive overhaul of security protocols, implementation of robust access controls, and enhanced staff training on data protection.
