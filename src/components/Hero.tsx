@@ -5,7 +5,7 @@ interface HeroProps {
   title: string;
   subtitle: string;
   backgroundImage: string;
-}
+} 
 
 const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
   return (
