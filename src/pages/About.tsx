@@ -84,7 +84,7 @@ const About: React.FC = () => {
             
             <div className="bg-white rounded-lg shadow-md p-8">
               <GraduationCap className="text-blue-600 mb-4" size={40} />
-              <h3 className="text-xl font-semibold mb-3">Certifications</h3>
+              <h3 className="text-xl font-semibold mb-3">Serving 35+ Clients Worldwide</h3>
               <p className="text-gray-600 mb-4">
                 Our team holds relevant industry certifications and professional qualifications.
               </p>
