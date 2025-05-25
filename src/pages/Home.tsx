@@ -325,7 +325,7 @@ const Home: React.FC = () => {
                 
                 <h3 className="text-xl font-bold mb-4">Contact Information</h3>
                 <p className="text-gray-600 mb-2">Phone: +918005540849</p>
-                <p className="text-gray-600 mb-2">Email: audit@taggify.com</p>
+                <p className="text-gray-600 mb-2">Email: info@taggifyaudit.com</p>
               </div>
             </div>
           </div>
