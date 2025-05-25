@@ -56,7 +56,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
             </div>
           </div> 
         </div>
-      </div>
+      </div> 
     </div> 
   );
 };
