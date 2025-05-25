@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
               <span className="font-bold text-xl">Taggify</span>
             </div>
             <p className="text-gray-400 mb-4">
-              Specialized audit services for BPO, KPO, and Social Media operations serving Global clients.
+              Specialized audit services for BPO, KPO, and Social Media operations serving Global Clients.
             </p>
             <div className="flex space-x-4">
               {/* <a href="#" className="text-gray-400 hover:text-white transition-colors">
