@@ -9,6 +9,8 @@ interface HeroProps {
 } 
 
 const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
+  const location = useLocation();
+const isHome = location.pathname === '/';
   return (
     <div
       className="relative min-h-screen flex items-center text-white"
