@@ -24,11 +24,11 @@ const Process: React.FC = () => {
     },
     {
       question: "How often should we conduct an audit?",
-      answer: "For operations serving Global clients, we recommend conducting a comprehensive audit annually, with smaller check-in audits quarterly or semi-annually. This ensures ongoing compliance and allows for timely identification of emerging issues."
+      answer: "For operations serving Global Clients, we recommend conducting a comprehensive audit annually, with smaller check-in audits quarterly or semi-annually. This ensures ongoing compliance and allows for timely identification of emerging issues."
     },
     {
       question: "Can you help with preparing for client audits?",
-      answer: "Yes, we offer pre-client audit preparation services. We can help you identify and address potential issues before your global clients conduct their own audits, increasing your chances of success and strengthening client confidence."
+      answer: "Yes, we offer pre-client audit preparation services. We can help you identify and address potential issues before your Global Clients conduct their own audits, increasing your chances of success and strengthening client confidence."
     }
   ];
 
@@ -36,7 +36,7 @@ const Process: React.FC = () => {
     <div>
       <Hero 
         title="Our Audit Process"
-        subtitle="A structured, thorough approach to evaluating and improving your operations serving Global clients."
+        subtitle="A structured, thorough approach to evaluating and improving your operations serving Global Clients."
         backgroundImage="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       />
       
