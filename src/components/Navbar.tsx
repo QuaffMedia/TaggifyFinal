@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
             <Link to="/about" className={linkClasses}>About Us</Link>
             <div className="relative services-dropdown">
               <button 
-  className={`${isScrolled ? 'text-white':'text-gray-800'} flex items-center`}
+  className={`${isScrolled ? 'text-gray-800':'text-white'} flex items-center`}
   onClick={(e) => {
     e.stopPropagation();
     toggleServicesDropdown();
