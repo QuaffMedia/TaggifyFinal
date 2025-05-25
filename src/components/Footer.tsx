@@ -85,11 +85,11 @@ const Footer: React.FC = () => {
                 {/* CIN: U62099HR2024PTC118110 | PAN: AAKCT7010Q | TAN: RTKT09071G */}
               </p>
             </div>
-            <div className="md:text-right space-x-4">
+            {/* <div className="md:text-right space-x-4">
               <Link to="/privacy-policy" className="text-gray-500 hover:text-gray-300 transition-colors">Privacy Policy</Link>
               <Link to="/terms-of-service" className="text-gray-500 hover:text-gray-300 transition-colors">Terms of Service</Link>
               <Link to="/sitemap" className="text-gray-500 hover:text-gray-300 transition-colors">Sitemap</Link>
-            </div>
+            </div> */} 
           </div>
         </div>
       </div>
