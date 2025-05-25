@@ -299,7 +299,7 @@ const Resources: React.FC = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Need Personalized Guidance?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-gray-600">
@@ -309,7 +309,7 @@ const Resources: React.FC = () => {
             Schedule a Consultation
           </Link>
         </div>
-      </section>
+      </section> */} 
     </div>
   );
 };
