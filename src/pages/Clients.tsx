@@ -286,7 +286,7 @@ const Clients: React.FC = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="py-20 bg-blue-700 text-white">
+      {/* <section className="py-20 bg-blue-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Satisfied Clients</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-blue-100">
@@ -296,8 +296,8 @@ const Clients: React.FC = () => {
             Schedule a Consultation
           </Link>
         </div>
-      </section>
-    </div>
+      </section> */}
+    </div> 
   );
 };
 
