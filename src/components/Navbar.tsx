@@ -103,23 +103,25 @@ const Navbar: React.FC = () => {
             <div className="flex flex-col space-y-3">
               <Link to="/" className="text-gray-800 hover:text-blue-700">Home</Link>
               <Link to="/about" className="text-gray-800 hover:text-blue-700">About Us</Link>
-              <div className="py-2">
-                <button 
-                  className="text-gray-800 font-medium mb-2 flex items-center"
-                  onClick={toggleServicesDropdown}
-                >
-                  Services <ChevronDown size={16} className="ml-1" />
-                </button>
-                {showServicesDropdown && (
-                  <div className="pl-4 flex flex-col space-y-2">
-                    <Link to="/services/bpo" className="text-gray-700 hover:text-blue-700">BPO Audits</Link>
-                    <Link to="/services/kpo" className="text-gray-700 hover:text-blue-700">KPO Compliance</Link>
-                    <Link to="/services/social-media" className="text-gray-700 hover:text-blue-700">Social Media Audits</Link>
-                    <Link to="/services/data-security" className="text-gray-700 hover:text-blue-700">Data Security</Link>
-{/*                     <Link to="/services/call-centre" className="text-gray-700 hover:text-blue-700">Call Centre Process</Link> */}
-                  </div>
-                )}
-              </div>
+              <div>
+  <button 
+    className="text-gray-800 font-medium mb-2 flex items-center"
+    onClick={(e) => {
+      e.stopPropagation();
+      toggleServicesDropdown();
+    }}
+  >
+    Services <ChevronDown size={16} className="ml-1" />
+  </button>
+  {showServicesDropdown && (
+    <div className="pl-4 flex flex-col space-y-2 mb-2">
+      <Link to="/services/bpo" className="text-gray-700 hover:text-blue-700">BPO Audits</Link>
+      <Link to="/services/kpo" className="text-gray-700 hover:text-blue-700">KPO Compliance</Link>
+      <Link to="/services/social-media" className="text-gray-700 hover:text-blue-700">Social Media Audits</Link>
+      <Link to="/services/data-security" className="text-gray-700 hover:text-blue-700">Data Security</Link>
+    </div>
+  )}
+</div>
               <Link to="/industries" className="text-gray-800 hover:text-blue-700">Industries</Link>
               <Link to="/process" className="text-gray-800 hover:text-blue-700">Process</Link>
               <Link to="/clients" className="text-gray-800 hover:text-blue-700">Clients</Link>
