@@ -54,7 +54,7 @@ const Process: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.pexels.com/photos/4342498/pexels-photo-4342498.jpeg" 
+                  src="https://images.pexels.com/photos/7681076/pexels-photo-7681076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
                   alt="Initial consultation"
                   className="w-full h-auto"
                 />
@@ -112,7 +112,7 @@ const Process: React.FC = () => {
               
               <div className="order-1 md:order-2 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg" 
+                  src="https://images.pexels.com/photos/7235677/pexels-photo-7235677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
                   alt="Scope definition"
                   className="w-full h-auto"
                 />
@@ -190,7 +190,7 @@ const Process: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                  src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  
                   alt="Recommendations discussion"
                   className="w-full h-auto"
                 />
@@ -250,7 +250,7 @@ const Process: React.FC = () => {
                 <img 
                   src="https://images.pexels.com/photos/7654609/pexels-photo-7654609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
                   alt="Follow-up support"
-                  className="w-full h-auto" 
+                  className="w-full h-auto"
                 />
               </div>
             </div>
