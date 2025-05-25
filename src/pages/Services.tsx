@@ -255,9 +255,7 @@ const Services: React.FC<ServicesProps> = ({ serviceSlug }) => {
               <Link to="/contact" className="inline-block bg-white text-blue-700 hover:bg-blue-100 font-semibold py-3 px-8 rounded-md transition-colors duration-300">
                 Schedule a Consultation
               </Link>
-              <Link to="/services" className="inline-block bg-transparent border border-white text-white hover:bg-white/10 font-semibold py-3 px-8 rounded-md transition-colors duration-300">
-                Explore Other Services
-              </Link>
+              
             </div>
           </div>
         </section>
