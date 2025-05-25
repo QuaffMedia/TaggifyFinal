@@ -86,8 +86,7 @@ const About: React.FC = () => {
               <GraduationCap className="text-blue-600 mb-4" size={40} />
               <h3 className="text-xl font-semibold mb-3">Serving 35+ Clients Worldwide</h3>
               <p className="text-gray-600 mb-4">
-                Our team holds relevant industry certifications and professional qualifications.
-              </p>
+                 We are managing 15+ Public Sector and 20+ Private Sector Companies </p>
               <p className="font-medium">ISO 9001:2015 Certified</p>
               <p className="font-medium">Member, Institute of Internal Auditors</p>
             </div>
