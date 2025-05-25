@@ -36,12 +36,14 @@ const isHome = location.pathname === '/';
             >
               Schedule a Consultation
             </a>
-            <a
-              href="#services"
-              className="inline-block bg-transparent hover:bg-white/10 text-white border border-white font-semibold py-3 px-8 rounded-md transition-colors duration-300 text-center"
-            >
-              Explore Our Services
-            </a>
+            {isHome && (
+    <a
+      href="#services"
+      className="inline-block bg-transparent hover:bg-white/10 text-white border border-white font-semibold py-3 px-8 rounded-md transition-colors duration-300 text-center"
+    >
+      Explore Our Services
+    </a>
+  )}
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 animate-fade-in-delay-3">
