@@ -55,12 +55,12 @@ const About: React.FC = () => {
       {/* Company Information Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          {/* <div className="text-center mb-16">
+          <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Company Information</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
               Taggify is a legally registered business entity operating under Indian law, providing professional audit services with full compliance.
             </p>
-          </div> */} 
+          </div> 
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-md p-8">
