@@ -5,11 +5,11 @@ import { ClipboardCheck, Search, BarChart3, Lock, Zap, ShieldCheck } from 'lucid
 import { Link } from '../components/Link';
 import { useParams } from 'react-router-dom';
 
-interface ServicesProps {
-  serviceSlug?: string;
-}
+import { useParams } from 'react-router-dom';
 
-const Services: React.FC<ServicesProps> = ({ serviceSlug }) => {
+const Services: React.FC = () => {
+  const { serviceSlug } = useParams<{ serviceSlug?: string }>();
+
   const services = [
     {
       id: 'bpo',
