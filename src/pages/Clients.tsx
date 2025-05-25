@@ -155,7 +155,35 @@ const Clients: React.FC = () => {
             {
               name: "Amul",
               logo: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Amul_dairy_logo.png"
-            }
+            },
+            {
+    name: "Amazon",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+  },
+  {
+    name: "Microsoft",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+  },
+  {
+    name: "General Electric",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/General_Electric_logo.svg/750px-General_Electric_logo.svg.png"
+  },
+  {
+    name: "Facebook",
+    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/768px-Facebook_f_logo_%282021%29.svg.png?20210818083032"
+  },
+  {
+    name: "Hungama",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Hungama_logo.png/1197px-Hungama_logo.png?20210406094036"
+  },
+  {
+    name: "Financepeer",
+    logo: "https://img-cdn.publive.online/fit-in/853x480/filters:format(webp)/entrackr/media/post_attachments/wp-content/uploads/2022/04/Financepeer.jpg"
+  },
+  {
+    name: "PayPal",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+  }
           ])
           .flat()
           .map((client, index) => (
