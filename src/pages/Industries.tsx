@@ -8,7 +8,7 @@ const Industries: React.FC = () => {
     {
       icon: <Headphones size={40} className="text-blue-600" />,
       title: "Voice-based BPO Operations",
-      description: "Comprehensive audits for call centers and customer support operations serving Global clients, focusing on call quality, script compliance, and customer experience.",
+      description: "Comprehensive audits for call centers and customer support operations serving Global Clients, focusing on call quality, script compliance, and customer experience.",
       benefits: [
         "Call quality assessment against industry benchmarks",
         "Script adherence and compliance verification",
@@ -32,7 +32,7 @@ const Industries: React.FC = () => {
     {
       icon: <BarChart3 size={40} className="text-blue-600" />,
       title: "Knowledge Process Outsourcing",
-      description: "Specialized audits for KPO operations providing research, analytics, and knowledge-based services to Global clients, focusing on quality and intellectual property protection.",
+      description: "Specialized audits for KPO operations providing research, analytics, and knowledge-based services to Global Clients, focusing on quality and intellectual property protection.",
       benefits: [
         "Research methodology and quality assessment",
         "Intellectual property protection verification",
@@ -44,7 +44,7 @@ const Industries: React.FC = () => {
     {
       icon: <MessageSquare size={40} className="text-blue-600" />,
       title: "Social Media Content Management",
-      description: "Comprehensive audits for social media management operations serving Global clients, ensuring content compliance, account security, and adherence to platform policies.",
+      description: "Comprehensive audits for social media management operations serving Global Clients, ensuring content compliance, account security, and adherence to platform policies.",
       benefits: [
         "Content compliance and quality assessment",
         "Platform policy adherence verification",
@@ -83,7 +83,7 @@ const Industries: React.FC = () => {
     <div>
       <Hero 
         title="Industries We Serve"
-        subtitle="Specialized audit solutions tailored to the unique needs of different operational models serving Global clients."
+        subtitle="Specialized audit solutions tailored to the unique needs of different operational models serving Global Clients."
         backgroundImage="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       />
       
@@ -93,7 +93,7 @@ const Industries: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Industry Expertise</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              We provide specialized audit solutions for a wide range of operations that serve Global clients, with deep expertise in the unique compliance requirements and operational challenges of each industry.
+              We provide specialized audit solutions for a wide range of operations that serve Global Clients, with deep expertise in the unique compliance requirements and operational challenges of each industry.
             </p>
           </div>
           
@@ -125,7 +125,7 @@ const Industries: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Understanding Industry-Specific Compliance</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Each industry serving Global clients has unique compliance requirements that must be addressed through specialized audit approaches.
+              Each industry serving Global Clients has unique compliance requirements that must be addressed through specialized audit approaches.
             </p>
           </div>
           
@@ -143,7 +143,7 @@ const Industries: React.FC = () => {
             <div className="bg-white rounded-lg shadow-md p-8">
               <h3 className="text-xl font-semibold mb-4">Quality Management</h3>
               <p className="text-gray-600 mb-6">
-                Global clients expect consistent, high-quality outputs that meet specific standards and requirements, particularly in knowledge-intensive operations like research and analysis.
+                Global Clients expect consistent, high-quality outputs that meet specific standards and requirements, particularly in knowledge-intensive operations like research and analysis.
               </p>
               <p className="text-gray-600">
                 Our audits assess quality management systems, review processes, output consistency, and error rates to ensure operations meet Global client expectations.
@@ -153,7 +153,7 @@ const Industries: React.FC = () => {
             <div className="bg-white rounded-lg shadow-md p-8">
               <h3 className="text-xl font-semibold mb-4">Information Security</h3>
               <p className="text-gray-600 mb-6">
-                Operations serving Global clients must implement robust information security measures to protect sensitive data and intellectual property, often requiring certification against standards like ISO 27001.
+                Operations serving Global Clients must implement robust information security measures to protect sensitive data and intellectual property, often requiring certification against standards like ISO 27001.
               </p>
               <p className="text-gray-600">
                 Our audits evaluate security controls, incident response procedures, vulnerability management, and employee security awareness to ensure comprehensive protection.
