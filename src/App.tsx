@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -12,7 +12,13 @@ import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+
 const App: React.FC = () => {
+  const location = useLocation();
+
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, [location.pathname]);
   return (
     <>
       <Navbar />
