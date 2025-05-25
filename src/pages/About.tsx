@@ -108,7 +108,7 @@ const About: React.FC = () => {
             <div className="text-center">
               <div className="w-48 h-48 rounded-full overflow-hidden mx-auto mb-4">
                 <img 
-                  src="/WhatsApp%20Image%202025-05-25%20at%2021.45.16_0d2e6562.jpg" 
+                  src="https://images.pexels.com/photos/3789888/pexels-photo-3789888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
                   alt="CEO"
                   className="w-full h-full object-cover"
                 />
@@ -139,7 +139,7 @@ Masters in professional accounting, Australia
             <div className="text-center">
               <div className="w-48 h-48 rounded-full overflow-hidden mx-auto mb-4">
                 <img 
-                  src="https://images.pexels.com/photos/3785104/pexels-photo-3785104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                  src="/WhatsApp%20Image%202025-05-25%20at%2021.45.16_0d2e6562.jpg" 
                   alt="CTO"
                   className="w-full h-full object-cover"
                 />
