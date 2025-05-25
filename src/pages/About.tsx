@@ -123,7 +123,7 @@ const About: React.FC = () => {
             <div className="text-center">
               <div className="w-48 h-48 rounded-full overflow-hidden mx-auto mb-4">
                 <img 
-                  src="/sajal_jain.jpg" 
+                  src="/sajal_jain.png" 
                   alt="COO"
                   className="w-full h-full object-cover"
                 />
