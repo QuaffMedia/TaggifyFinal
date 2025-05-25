@@ -5,9 +5,17 @@ interface HeroProps {
   title: string;
   subtitle: string;
   backgroundImage: string;
+  consultationLink?: string;
+  servicesLink?: string;
 }
 
-const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
+const Hero: React.FC<HeroProps> = ({
+  title,
+  subtitle,
+  backgroundImage,
+  consultationLink = "#contact-form",
+  servicesLink = "#services",
+}) => {
   return (
     <div
       className="relative min-h-screen flex items-center text-white"
@@ -28,13 +36,13 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
           
           <div className="flex flex-col sm:flex-row gap-4 mb-16 animate-fade-in-delay-2">
             <a
-              href="#contact-form"
+              href={consultationLink}
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-md transition-colors duration-300 text-center"
             >
               Schedule a Consultation
             </a>
             <a
-              href="#services"
+              href={servicesLink}
               className="inline-block bg-transparent hover:bg-white/10 text-white border border-white font-semibold py-3 px-8 rounded-md transition-colors duration-300 text-center"
             >
               Explore Our Services
