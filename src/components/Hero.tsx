@@ -42,19 +42,19 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in-delay-3">
-  <div className="flex items-center">
-    <Shield className="mr-3 text-blue-400 flex-shrink-0" size={24} />
-    <span className="text-sm md:text-base">Certified Audit Experts</span>
-  </div>
-  <div className="flex items-center">
-    <Award className="mr-3 text-blue-400 flex-shrink-0" size={24} />
-    <span className="text-sm md:text-base">Industry Recognized Experts</span>
-  </div>
-  <div className="flex items-center">
-    <TrendingUp className="mr-3 text-blue-400 flex-shrink-0" size={24} />
-    <span className="text-sm md:text-base">98% Client Satisfaction</span>
-  </div>
-</div>
+            <div className="flex items-center">
+              <Shield className="mr-3 text-blue-400" size={24} />
+              <span>Certified Audit Experts</span>
+            </div>
+            <div className="flex items-center">
+              <Award className="mr-3 text-blue-400" size={24} />
+              <span>Recognized Industry Experts</span>
+            </div>
+            <div className="flex items-center">
+              <TrendingUp className="mr-0 text-blue-400" size={24} />
+              <span>98% Client Satisfaction</span>
+            </div>
+          </div> 
         </div>
       </div>
     </div>
