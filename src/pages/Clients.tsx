@@ -36,7 +36,7 @@ const Clients: React.FC = () => {
     {
       title: "BPO Call Quality Transformation",
       client: "Leading Voice-Based BPO",
-      challenge: "Facing declining quality scores and compliance issues in customer service operations for US financial clients.",
+      challenge: "Facing declining quality scores and compliance issues in customer service operations for global financial clients.",
       solution: "Comprehensive audit of call quality, compliance processes, and agent training, followed by implementation of enhanced monitoring systems and training programs.",
       results: [
         "37% reduction in compliance issues",
