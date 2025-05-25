@@ -11,14 +11,10 @@ import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-
+ 
 
 const App: React.FC = () => {
-  const location = useLocation();
-
-useEffect(() => {
-  window.scrollTo(0, 0);
-}, [location.pathname]);
+  
   return (
     <>
       <Navbar />
