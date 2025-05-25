@@ -5,7 +5,6 @@ import { ClipboardCheck, Search, BarChart3, Lock, Zap, ShieldCheck } from 'lucid
 import { Link } from '../components/Link';
 import { useParams } from 'react-router-dom';
 
-import { useParams } from 'react-router-dom';
 
 const Services: React.FC = () => {
   const { serviceSlug } = useParams<{ serviceSlug?: string }>();
