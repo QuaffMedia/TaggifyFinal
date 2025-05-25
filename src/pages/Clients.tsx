@@ -133,29 +133,7 @@ const Clients: React.FC = () => {
       <div className="flex animate-scroll-left whitespace-nowrap">
         {Array(2)
           .fill([
-            {
-              name: "Indian Oil Corporation",
-              logo: "https://iocl.com/images/logo.png"
-            },
-            {
-              name: "Hindustan Petroleum ",
-              logo: "https://www.hindustanpetroleum.com/images/logo.png"
-            },
-            {
-              name: "Ministry of Education",
-              logo: "https://www.education.gov.in/sites/upload_files/mhrd/files/logo.png"
-            },
-            {
-              name: "Reliance Communications",
-              logo: "https://logonoid.com/images/reliance-communications-logo.png"
-            }, {
-              name: "Honda Cars",
-              logo: "https://www.logo.wine/a/logo/Honda_Cars_India/Honda_Cars_India-Logo.wine.svg"
-            },
-            {
-              name: "Amul",
-              logo: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Amul_dairy_logo.png"
-            },
+            
             {
     name: "Amazon",
     logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
@@ -184,6 +162,29 @@ const Clients: React.FC = () => {
     name: "PayPal",
     logo: "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
   }
+            ,{
+              name: "Indian Oil Corporation",
+              logo: "https://iocl.com/images/logo.png"
+            },
+            {
+              name: "Hindustan Petroleum ",
+              logo: "https://www.hindustanpetroleum.com/images/logo.png"
+            },
+            {
+              name: "Ministry of Education",
+              logo: "https://www.education.gov.in/sites/upload_files/mhrd/files/logo.png"
+            },
+            {
+              name: "Reliance Communications",
+              logo: "https://logonoid.com/images/reliance-communications-logo.png"
+            }, {
+              name: "Honda Cars",
+              logo: "https://www.logo.wine/a/logo/Honda_Cars_India/Honda_Cars_India-Logo.wine.svg"
+            },
+            {
+              name: "Amul",
+              logo: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Amul_dairy_logo.png"
+            }
           ])
           .flat()
           .map((client, index) => (
