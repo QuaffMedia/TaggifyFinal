@@ -59,7 +59,7 @@ const Services: React.FC<ServicesProps> = ({ serviceSlug }) => {
       icon: <BarChart3 size={32} />,
       title: 'Social Media Operations Audit',
       shortDescription: 'Evaluation of social media management operations.',
-      fullDescription: 'Our Social Media Operations Audit examines your social media management services for Global clients, focusing on content compliance, account security, adherence to platform policies, brand guideline compliance, and crisis management preparedness. We assess content creation processes, approval workflows, account access controls, and response protocols.',
+      fullDescription: 'Our Social Media Operations Audit examines your social media management services for Global Clients, focusing on content compliance, account security, adherence to platform policies, brand guideline compliance, and crisis management preparedness. We assess content creation processes, approval workflows, account access controls, and response protocols.',
       benefits: [
         'Ensure compliance with platform policies and guidelines',
         'Strengthen account security and access controls',
@@ -271,7 +271,7 @@ const Services: React.FC<ServicesProps> = ({ serviceSlug }) => {
     <div>
       <Hero 
         title="Our Comprehensive Audit Services"
-        subtitle="Specialized audit solutions for BPO, KPO, and Social Media operations serving Global clients."
+        subtitle="Specialized audit solutions for BPO, KPO, and Social Media operations serving Global Clients."
         backgroundImage="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       />
       
@@ -281,7 +281,7 @@ const Services: React.FC<ServicesProps> = ({ serviceSlug }) => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Specialized Audit Solutions</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Our audit services are designed to help Indian operations serving global clients maintain the highest standards of compliance, security, and operational excellence.
+              Our audit services are designed to help Indian operations serving Global Clients maintain the highest standards of compliance, security, and operational excellence.
             </p>
           </div>
           
@@ -314,7 +314,7 @@ const Services: React.FC<ServicesProps> = ({ serviceSlug }) => {
             <div>
               <h2 className="text-3xl font-bold mb-6">Why Choose Our Audit Services</h2>
               <p className="text-gray-600 mb-8">
-                Our specialized approach to auditing operations that serve GLobal clients sets us apart and ensures you receive maximum value from our services.
+                Our specialized approach to auditing operations that serve Global Clients sets us apart and ensures you receive maximum value from our services.
               </p>
               
               <div className="space-y-6">
