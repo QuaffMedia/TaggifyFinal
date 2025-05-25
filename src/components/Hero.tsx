@@ -15,7 +15,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
         backgroundImage: linear-gradient(rgba(0, 0, 32, 0.7), rgba(0, 0, 32, 0.8)), url(${backgroundImage}),
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-      }} */} 
+      }} */ 
     >
       <div className="container mx-auto px-4 py-20 z-10">
         <div className="max-w-3xl">
