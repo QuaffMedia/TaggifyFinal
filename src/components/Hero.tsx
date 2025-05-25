@@ -1,6 +1,6 @@
 import React from 'react';
 import { Shield, Award, TrendingUp } from 'lucide-react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 interface HeroProps {
   title: string;
@@ -32,12 +32,12 @@ const isHome = location.pathname === '/';
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-16 animate-fade-in-delay-2">
-            <a
+            <Link
               to='/contact'
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-md transition-colors duration-300 text-center"
             >
               Schedule a Consultation
-            </a>
+            </Link>
             {isHome && (
     <a
       href="#services"
