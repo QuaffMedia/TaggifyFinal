@@ -54,7 +54,7 @@ const Process: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.pexels.com/photos/7681076/pexels-photo-7681076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                  src="https://unsplash.com/photos/people-on-conference-table-looking-at-talking-woman-Q80LYxv_Tbs" 
                   alt="Initial consultation"
                   className="w-full h-auto"
                 />
