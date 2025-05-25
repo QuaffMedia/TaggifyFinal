@@ -6,11 +6,11 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 const Contact: React.FC = () => {
   return (
     <div>
-      <Hero 
+      {/* <Hero 
         title="Contact Us"
         subtitle="Get in touch with our team to discuss your audit needs and how we can help ensure your operations meet the highest standards."
         backgroundImage="https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-      />
+      /> */} 
       
       {/* Contact Information Section */}
       <section className="py-20 bg-white">
