@@ -221,7 +221,7 @@ const Clients: React.FC = () => {
                     </div>
                   </div>
                   
-                  <div className="bg-blue-700 text-white p-8 flex flex-col justify-center">
+                  {/* <div className="bg-blue-700 text-white p-8 flex flex-col justify-center">
                     <div className="text-center">
                       <h4 className="text-xl font-bold mb-4">Ready for Similar Results?</h4>
                       <p className="mb-6">
@@ -231,7 +231,7 @@ const Clients: React.FC = () => {
                         Contact Us Today
                       </Link>
                     </div>
-                  </div>
+                  </div> */} 
                 </div>
               </div>
             ))}
