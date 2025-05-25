@@ -10,7 +10,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
   const location = useLocation();
-
+ 
 const isHome = location.pathname === '/';
   return (
     <div
