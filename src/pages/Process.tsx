@@ -112,7 +112,7 @@ const Process: React.FC = () => {
               
               <div className="order-1 md:order-2 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.pexels.com/photos/7235677/pexels-photo-7235677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                  src="https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg" 
                   alt="Scope definition"
                   className="w-full h-auto"
                 />
