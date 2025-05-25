@@ -123,7 +123,7 @@ const Clients: React.FC = () => {
      <section className="py-20 bg-gray-50 overflow-hidden">
   <div className="w-full px-3 lg:px-32">
     <div className="text-center mb-16">
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">Clients We Serve</h2>
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">Global Clients We Serve</h2>
       <p className="text-gray-600 max-w-3xl mx-auto">
         A glimpse of organizations we’ve proudly served across public and private sectors.
       </p>
