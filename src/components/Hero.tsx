@@ -41,7 +41,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
             </a>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in-delay-3">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 animate-fade-in-delay-3">
             <div className="flex text-sm items-center">
               <Shield className="mr-3 text-blue-400" size={24} />
               <span>Certified Audit Experts</span>
