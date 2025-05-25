@@ -63,7 +63,7 @@ const Clients: React.FC = () => {
       results: [
         "85% reduction in policy violations",
         "Improved client satisfaction scores",
-        "Secured three new major Global clients"
+        "Secured three new major Global Clients"
       ]
     }
   ];
@@ -254,7 +254,7 @@ const Clients: React.FC = () => {
               <div className="text-5xl font-bold text-blue-600 mb-4">50+</div>
               <h3 className="text-xl font-semibold mb-2">Clients Served</h3>
               <p className="text-gray-600">
-                We've partnered with over 50 businesses serving Global clients across various industries.
+                We've partnered with over 50 businesses serving Global Clients across various industries.
               </p>
             </div>
             
@@ -290,7 +290,7 @@ const Clients: React.FC = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Satisfied Clients</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-blue-100">
-            Discover how our audit services can help your business maintain compliance and operational excellence when serving Global clients.
+            Discover how our audit services can help your business maintain compliance and operational excellence when serving Global Clients.
           </p>
           <Link to="/contact" className="inline-block bg-white text-blue-700 hover:bg-blue-100 font-semibold py-3 px-8 rounded-md transition-colors duration-300">
             Schedule a Consultation
