@@ -51,7 +51,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
               <span>Recognized Industry Experts</span>
             </div>
             <div className="flex items-center">
-              <TrendingUp className="mr-3 text-blue-400" size={24} />
+              <TrendingUp className="mr-1 text-blue-400" size={24} />
               <span>98% Client Satisfaction</span>
             </div>
           </div>
