@@ -39,7 +39,7 @@ const Home: React.FC = () => {
     <div>
       <Hero 
         title="Leading Audit Services for Global Client-Facing Operations"
-        subtitle="Led by former Big Four, we provide compliance-driven audit solutions for BPOs, KPOs, and social media agencies—building trust between Indian teams and global clients."
+        subtitle="Led by former Big Four, we provide compliance-driven audit solutions for BPOs, KPOs, and social media agencies—building trust between Indian teams and Global Clients."
         backgroundImage="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       />
       
@@ -49,7 +49,7 @@ const Home: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted Audit Partner for global-Focused Operations</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Taggify is a registered Indian audit agency specializing in evaluating and improving operational compliance for businesses serving global clients.
+              Taggify is a registered Indian audit agency specializing in evaluating and improving operational compliance for businesses serving Global Clients.
             </p>
           </div>
           
@@ -131,7 +131,7 @@ const Home: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Comprehensive Audit Services</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              We provide specialized audit and compliance services for operations that serve Global clients, ensuring your business maintains the highest standards.
+              We provide specialized audit and compliance services for operations that serve Global Clients, ensuring your business maintains the highest standards.
             </p>
           </div>
           
