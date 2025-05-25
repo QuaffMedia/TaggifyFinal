@@ -87,10 +87,10 @@ const About: React.FC = () => {
               <h3 className="text-xl font-semibold mb-3">Serving 35+ Clients Worldwide</h3>
               <p className="text-gray-600 mb-4">
                  We are managing 15+ Public Sector and 20+ Private Sector Companies </p>
-              <p className="font-medium">ISO 9001:2015 Certified</p>
-              <p className="font-medium">Member, Institute of Internal Auditors</p> 
-            </div> 
-          </div>
+              {/* <p className="font-medium">ISO 9001:2015 Certified</p>
+              <p className="font-medium">Member, Institute of Internal Auditors</p> */} 
+            </div>
+          </div> 
         </div>
       </section>
       
