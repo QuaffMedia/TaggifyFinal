@@ -78,8 +78,8 @@ const About: React.FC = () => {
               <p className="text-gray-600 mb-4">
                 Fully compliant with Indian tax regulations and financial reporting requirements.
               </p>
-              <p className="font-medium">PAN: AAKCT7010Q</p>
-              <p className="font-medium">TAN: RTKT09071G</p>
+              <p className="font-medium">GST: 06AAKCT7010Q1ZW</p>
+              {/* <p className="font-medium">TAN: RTKT09071G</p> */}
             </div>
             
             <div className="bg-white rounded-lg shadow-md p-8">
