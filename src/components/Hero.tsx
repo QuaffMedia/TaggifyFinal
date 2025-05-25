@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, Award, TrendingUp } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 
 interface HeroProps {
   title: string;
