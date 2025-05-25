@@ -42,12 +42,12 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in-delay-3">
-            <div className="flex items-center">
+            <div className="flex text-sm items-center">
               <Shield className="mr-3 text-blue-400" size={24} />
               <span>Certified Audit Experts</span>
             </div>
             <div className="flex text-sm items-center">
-              <Award className="mr-3 text-blue-400" size={24} />
+              <Award className="mr-3 text-sm text-blue-400" size={24} />
               <span>Recognized Industry Experts</span>
             </div>
             <div className="flex items-center">
