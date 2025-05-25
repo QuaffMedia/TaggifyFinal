@@ -60,25 +60,25 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex space-x-8">
             <Link to="/" className={linkClasses}>Home</Link>
             <Link to="/about" className={linkClasses}>About Us</Link>
-            <div className="relative">
-  <button 
-    className="text-gray-800 font-medium mb-2 flex items-center w-full text-left"
-    onClick={(e) => {
-      e.stopPropagation();
-      toggleServicesDropdown();
-    }}
-  >
-    Services <ChevronDown size={16} className="ml-1" />
-  </button>
-  {showServicesDropdown && (
-    <div className="bg-gray-50 rounded-md py-2 mb-2">
-      <Link to="/services/bpo" className="block px-4 py-2 text-gray-700 hover:text-blue-700">BPO Audits</Link>
-      <Link to="/services/kpo" className="block px-4 py-2 text-gray-700 hover:text-blue-700">KPO Compliance</Link>
-      <Link to="/services/social-media" className="block px-4 py-2 text-gray-700 hover:text-blue-700">Social Media Audits</Link>
-      <Link to="/services/data-security" className="block px-4 py-2 text-gray-700 hover:text-blue-700">Data Security</Link>
-    </div>
-  )}
-</div>
+            <div className="relative services-dropdown">
+              <button 
+  className=" font-medium mb-2 flex items-center"
+  onClick={(e) => {
+    e.stopPropagation();
+    toggleServicesDropdown();
+  }}
+>
+                Services <ChevronDown size={16} className="ml-1" />
+              </button>
+              {showServicesDropdown && (
+                <div className="absolute bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                  <Link to="/services/bpo" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">BPO Audits</Link>
+                  <Link to="/services/kpo" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">KPO Compliance</Link>
+                  <Link to="/services/social-media" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">Social Media Audits</Link>
+                  <Link to="/services/data-security" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">Data Security</Link>
+                </div>
+              )}
+            </div>
             <Link to="/industries" className={linkClasses}>Industries</Link>
             <Link to="/process" className={linkClasses}>Process</Link>
             <Link to="/clients" className={linkClasses}>Clients</Link>
