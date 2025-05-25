@@ -129,7 +129,7 @@ const About: React.FC = () => {
                 />
               </div>
               <h3 className="text-xl font-semibold">Sajal Jain</h3>
-              <p className="text-blue-600 mb-3">Chief Operations Officer</p>
+              <p className="text-blue-600 mb-3">Chief Financial officer </p>
               <p className="text-gray-600 max-w-xs mx-auto">
                 Former BPO operations director with extensive experience in process optimization and compliance.
               </p>
