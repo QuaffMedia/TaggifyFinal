@@ -47,7 +47,7 @@ const Clients: React.FC = () => {
     {
       title: "Data Security Enhancement",
       client: "Research and Analytics KPO",
-      challenge: "Vulnerabilities in data protection protocols threatening relationship with US legal clients.",
+      challenge: "Vulnerabilities in data protection protocols threatening relationship with global legal clients.",
       solution: "Thorough security audit followed by implementation of enhanced access controls, encryption, and staff security training.",
       results: [
         "Zero data security incidents post-implementation",
