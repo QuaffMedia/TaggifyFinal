@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
             <Link to="/industries" className={linkClasses}>Industries</Link>
             <Link to="/process" className={linkClasses}>Process</Link>
             <Link to="/clients" className={linkClasses}>Clients</Link>
-            <Link to="/resources" className={linkClasses}>Resources</Link>
+            {/* <Link to="/resources" className={linkClasses}>Resources</Link> */}
             <Link to="/contact" className={linkClasses}>Contact</Link>
           </div>
 
@@ -125,9 +125,9 @@ const Navbar: React.FC = () => {
               <Link to="/industries" className="text-gray-800 hover:text-blue-700">Industries</Link>
               <Link to="/process" className="text-gray-800 hover:text-blue-700">Process</Link>
               <Link to="/clients" className="text-gray-800 hover:text-blue-700">Clients</Link>
-              <Link to="/resources" className="text-gray-800 hover:text-blue-700">Resources</Link>
+              {/* <Link to="/resources" className="text-gray-800 hover:text-blue-700">Resources</Link> */}
               <Link to="/contact" className="text-gray-800 hover:text-blue-700">Contact</Link>
-            </div>
+            </div> 
           </div>
         )}
       </div>
