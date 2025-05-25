@@ -116,7 +116,7 @@ const About: React.FC = () => {
               <h3 className="text-xl font-semibold">Rohit Goel</h3>
               <p className="text-blue-600 mb-3">Chief Executive Officer</p>
               <p className="text-gray-600 max-w-xs mx-auto">
-                Driven by precision and compliance, our CEO leads with a vision to elevate audit standards in BPO and KPO operations. With deep industry expertise, he ensures global clients trust every process we validate.
+                Our CEO leads with precision and expertise, elevating audit standards and ensuring global trust in BPO and KPO operations.
               </p>
             </div>
             
