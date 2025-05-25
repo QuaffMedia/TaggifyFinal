@@ -8,7 +8,7 @@ const About: React.FC = () => {
     <div>
       <Hero 
         title="About Taggify"
-        subtitle="We are a specialized audit agency committed to ensuring compliance and operational excellence for businesses serving global clients."
+        subtitle="We are a specialized audit agency committed to ensuring compliance and operational excellence for businesses serving Global Clients."
         backgroundImage="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       />
       
@@ -22,7 +22,7 @@ const About: React.FC = () => {
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-3">Mission</h3>
                 <p className="text-gray-600">
-                  To provide thorough, unbiased audit services that help Indian operations serving Global clients maintain the highest standards of compliance, security, and operational efficiency.
+                  To provide thorough, unbiased audit services that help Indian operations serving Global Clients maintain the highest standards of compliance, security, and operational efficiency.
                 </p>
               </div>
               
