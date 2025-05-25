@@ -143,10 +143,11 @@ const About: React.FC = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold">Avinash Kumar</h3>
-              <p className="text-blue-600 mb-3">Chief Technical Officer</p>
+              <h3 className="text-xl font-semibold">Sunil Agarwal 
+</h3>
+              <p className="text-blue-600 mb-3">Chief Operating officer </p>
               <p className="text-gray-600 max-w-xs mx-auto">
-                Data security expert specializing in compliance regulations for cross-border operations.
+                Former Operations Director for Rajasthan Gov projects with 35+ years experience in process optimization and compliance.
               </p>
             </div>
           </div>
