@@ -177,7 +177,7 @@ const Industries: React.FC = () => {
             <div className="bg-gray-50 rounded-lg shadow-md p-8">
               <h3 className="text-xl font-semibold mb-3">Voice BPO Operations Transformation</h3>
               <p className="text-gray-700 mb-4">
-                A leading voice-based BPO serving US financial clients was struggling with quality issues and compliance concerns. Our comprehensive audit identified critical gaps in call monitoring, script compliance, and customer data handling.
+                A leading voice-based BPO serving financial clients was struggling with quality issues and compliance concerns. Our comprehensive audit identified critical gaps in call monitoring, script compliance, and customer data handling.
               </p>
               <p className="text-gray-700 mb-4">
                 We provided detailed recommendations for enhancing quality monitoring, implementing robust data security measures, and improving agent training.
