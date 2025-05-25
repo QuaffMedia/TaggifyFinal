@@ -1,4 +1,21 @@
-s, focusing on service quality, compliance with client requirements, operational efficiency, and adherence to industry best practices. We examine call quality, data entry accuracy, customer service protocols, workforce management, and compliance with service level agreements.',
+import React from 'react';
+import Hero from '../components/Hero';
+import ServiceCard from '../components/ServiceCard';
+import { ClipboardCheck, Search, BarChart3, Lock, Zap, ShieldCheck } from 'lucide-react';
+import { Link } from '../components/Link';
+
+interface ServicesProps {
+  serviceSlug?: string;
+}
+
+const Services: React.FC<ServicesProps> = ({ serviceSlug }) => {
+  const services = [
+    {
+      id: 'bpo',
+      icon: <ClipboardCheck size={32} />,
+      title: 'BPO Operations Audit',
+      shortDescription: 'Comprehensive evaluation of voice and non-voice BPO operations.',
+      fullDescription: 'Our BPO Operations Audit provides a thorough assessment of your business process outsourcing operations, focusing on service quality, compliance with client requirements, operational efficiency, and adherence to industry best practices. We examine call quality, data entry accuracy, customer service protocols, workforce management, and compliance with service level agreements.',
       benefits: [
         'Identify operational inefficiencies and quality gaps',
         'Ensure compliance with client requirements and SLAs',
@@ -199,7 +216,7 @@ s, focusing on service quality, compliance with client requirements, operational
     </div>
     
     <div className="max-w-4xl mx-auto">
-      <div className="space-y-4"> 
+      <div className="space-y-4">
         {service.process.map((step, index) => (
           <div key={index} className="relative">
             {/* Connecting line - slightly thicker */}
@@ -346,7 +363,7 @@ s, focusing on service quality, compliance with client requirements, operational
           </Link>
         </div>
       </section>
-    </div>
+    </div> 
   );
 };
 
