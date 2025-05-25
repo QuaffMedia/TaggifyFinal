@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, Award, TrendingUp } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 
 interface HeroProps {
   title: string;
@@ -9,12 +10,10 @@ interface HeroProps {
   servicesLink?: string;
 }
 
-const Hero: React.FC<HeroProps> = ({
-  title,
-  subtitle,
-  backgroundImage,
-  consultationLink = "#contact-form",
-  servicesLink = "#services",
+const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
+  const location = useLocation();
+  const isHome = location.pathname === '/';
+
 }) => {
   return (
     <div
