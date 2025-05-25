@@ -245,7 +245,7 @@ const Services: React.FC = () => {
 
         
         {/* CTA Section */}
-        <section className="py-20 bg-blue-700 text-white">
+        {/* <section className="py-20 bg-blue-700 text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-6">Ready to Improve Your {service.title.split(' ')[0]} Operations?</h2>
             <p className="text-xl mb-8 max-w-3xl mx-auto text-blue-100">
@@ -258,7 +258,7 @@ const Services: React.FC = () => {
               
             </div>
           </div>
-        </section>
+        </section> */} 
       </div>
     );
   }
