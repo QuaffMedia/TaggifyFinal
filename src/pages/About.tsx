@@ -162,7 +162,7 @@ Masters in professional accounting, Australia
   <h3 className="text-xl font-semibold">Sarthak Agarwal</h3>
   <p className="text-blue-600 mb-3">Chief Strategist Officer</p>
   <p className="text-gray-600 max-w-xs mx-auto">
-    Sarthak Agarwal brings 14 years of experience in crafting winning strategies that drive growth and innovation.
+    He brings 14 years of experience in crafting winning strategies that drive growth and innovation.
   </p>
 </div>
 
