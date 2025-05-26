@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
     <nav className={navbarClasses}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center">
+          <link onclick={closeMenu} to="/" className="flex items-center">
          
             <span className={`font-bold text-xl mr-2 ${isScrolled ? 'text-gray-800' : 'text-white'}`}>
               Taggify
@@ -64,8 +64,8 @@ const Navbar: React.FC = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            <Link to="/" className={linkClasses}>Home</Link>
-            <Link to="/about" className={linkClasses}>About Us</Link>
+            <link onclick={closeMenu} to="/" className={linkClasses}>Home</Link>
+            <link onclick={closeMenu} to="/about" className={linkClasses}>About Us</Link>
             <div className="relative services-dropdown">
               <button 
   className={`${isScrolled ? 'text-gray-800':'text-white'} flex items-center`}
@@ -78,21 +78,21 @@ const Navbar: React.FC = () => {
               </button>
               {showServicesDropdown && (
                 <div className="absolute bg-white shadow-lg rounded-md mt-2 py-2 w-48">
-                  <Link to="/services/call-auditing" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">Call Auditing</Link>
-                  <Link to="/services/bpo" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">BPO Audits</Link>
-                  <Link to="/services/kpo" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">KPO Compliance</Link>
-                  <Link to="/services/social-media" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">Social Media Audits</Link>
+                  <link onclick={closeMenu} to="/services/call-auditing" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">Call Auditing</Link>
+                  <link onclick={closeMenu} to="/services/bpo" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">BPO Audits</Link>
+                  <link onclick={closeMenu} to="/services/kpo" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">KPO Compliance</Link>
+                  <link onclick={closeMenu} to="/services/social-media" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">Social Media Audits</Link>
                   
-<Link to="/services/data-security" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">Data Security</Link>
+<link onclick={closeMenu} to="/services/data-security" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">Data Security</Link>
 
                 </div>
               )}
             </div>
-            <Link to="/industries" className={linkClasses}>Industries</Link>
-            <Link to="/process" className={linkClasses}>Process</Link>
-            <Link to="/clients" className={linkClasses}>Clients</Link>
-            {/* <Link to="/resources" className={linkClasses}>Resources</Link> */}
-            <Link to="/contact" className={linkClasses}>Contact</Link>
+            <link onclick={closeMenu} to="/industries" className={linkClasses}>Industries</Link>
+            <link onclick={closeMenu} to="/process" className={linkClasses}>Process</Link>
+            <link onclick={closeMenu} to="/clients" className={linkClasses}>Clients</Link>
+            {/* <link onclick={closeMenu} to="/resources" className={linkClasses}>Resources</Link> */}
+            <link onclick={closeMenu} to="/contact" className={linkClasses}>Contact</Link>
           </div>
 
           {/* Mobile menu button */}
@@ -110,8 +110,8 @@ const Navbar: React.FC = () => {
         {isOpen && (
           <div className="md:hidden mt-4 bg-white rounded-lg shadow-lg p-4">
             <div className="flex flex-col space-y-3">
-              <Link to="/" className="text-gray-800 hover:text-blue-700">Home</Link>
-              <Link to="/about" className="text-gray-800 hover:text-blue-700">About Us</Link>
+              <link onclick={closeMenu} to="/" className="text-gray-800 hover:text-blue-700">Home</Link>
+              <link onclick={closeMenu} to="/about" className="text-gray-800 hover:text-blue-700">About Us</Link>
               <div>
   <button 
     className="text-gray-800 font-medium mb-2 flex items-center"
@@ -124,19 +124,19 @@ const Navbar: React.FC = () => {
   </button>
   {showServicesDropdown && (
     <div className="pl-4 flex flex-col space-y-2 mb-2"> 
-      <Link to="/services/call-auditing" className="block py-2 text-gray-800 hover:bg-blue-50">Call Auditing</Link>
-      <Link to="/services/bpo" className="text-gray-700 hover:text-blue-700">BPO Audits</Link>
-      <Link to="/services/kpo" className="text-gray-700 hover:text-blue-700">KPO Compliance</Link>
-      <Link to="/services/social-media" className="text-gray-700 hover:text-blue-700">Social Media Audits</Link>
-      <Link to="/services/data-security" className="text-gray-700 hover:text-blue-700">Data Security</Link>
+      <link onclick={closeMenu} to="/services/call-auditing" className="block py-2 text-gray-800 hover:bg-blue-50">Call Auditing</Link>
+      <link onclick={closeMenu} to="/services/bpo" className="text-gray-700 hover:text-blue-700">BPO Audits</Link>
+      <link onclick={closeMenu} to="/services/kpo" className="text-gray-700 hover:text-blue-700">KPO Compliance</Link>
+      <link onclick={closeMenu} to="/services/social-media" className="text-gray-700 hover:text-blue-700">Social Media Audits</Link>
+      <link onclick={closeMenu} to="/services/data-security" className="text-gray-700 hover:text-blue-700">Data Security</Link>
     </div>
   )}
 </div>
-              <Link to="/industries" className="text-gray-800 hover:text-blue-700">Industries</Link>
-              <Link to="/process" className="text-gray-800 hover:text-blue-700">Process</Link>
-              <Link to="/clients" className="text-gray-800 hover:text-blue-700">Clients</Link>
-              {/* <Link to="/resources" className="text-gray-800 hover:text-blue-700">Resources</Link> */}
-              <Link to="/contact" className="text-gray-800 hover:text-blue-700">Contact</Link>
+              <link onclick={closeMenu} to="/industries" className="text-gray-800 hover:text-blue-700">Industries</Link>
+              <link onclick={closeMenu} to="/process" className="text-gray-800 hover:text-blue-700">Process</Link>
+              <link onclick={closeMenu} to="/clients" className="text-gray-800 hover:text-blue-700">Clients</Link>
+              {/* <link onclick={closeMenu} to="/resources" className="text-gray-800 hover:text-blue-700">Resources</Link> */}
+              <link onclick={closeMenu} to="/contact" className="text-gray-800 hover:text-blue-700">Contact</Link>
             </div> 
           </div>
         )}
