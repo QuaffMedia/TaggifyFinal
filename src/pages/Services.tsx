@@ -192,7 +192,7 @@ const Services: React.FC = () => {
       ]
     }
   ];
-}
+
   // If a specific service is requested
   if (serviceSlug) {
     const service = services.find(s => s.id === serviceSlug);
