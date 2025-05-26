@@ -151,6 +151,21 @@ Masters in professional accounting, Australia
                 Former Operations Director for Rajasthan Gov projects with 35+ years experience in process optimization and compliance.
               </p>
             </div>
+            <div className="text-center">
+  <div className="w-48 h-48 rounded-full overflow-hidden mx-auto mb-4">
+    <img 
+      src="https://via.placeholder.com/300x300.png?text=Sarthak+Agarwal" 
+      alt="CSO"
+      className="w-full h-full object-cover"
+    />
+  </div>
+  <h3 className="text-xl font-semibold">Sarthak Agarwal</h3>
+  <p className="text-blue-600 mb-3">Chief Strategist Officer</p>
+  <p className="text-gray-600 max-w-xs mx-auto">
+    Sarthak Agarwal brings 14 years of experience in crafting winning strategies that drive growth and innovation.
+  </p>
+</div>
+
           </div>
         </div>
       </section>
