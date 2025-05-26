@@ -114,7 +114,7 @@ const Navbar: React.FC = () => {
               <Link onClick={closeMenu} to="/about" className="text-gray-800 hover:text-blue-700">About Us</Link>
               <div>
   <button 
-    className="text-gray-800 font-medium mb-2 flex items-center"
+    className="text-gray-800 font-medium mb-1 flex items-center"
     onClick={(e) => {
       e.stopPropagation();
       toggleServicesDropdown();
