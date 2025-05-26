@@ -10,55 +10,55 @@ const Services: React.FC = () => {
   const { serviceSlug } = useParams<{ serviceSlug?: string }>();
 
   const services = [
-    {
-  id: 'call-auditing',
-  icon: <ClipboardCheck size={32} />,
-  title: 'Call Auditing Service',
-  shortDescription: 'Audit call center operations for quality, efficiency, and compliance.',
-  fullDescription: 'Our Call Auditing Services provide a deep evaluation of your customer interactions—measuring agent performance, script adherence, resolution rates, and infrastructure stability. With our checklist-driven approach, we help enhance service quality, ensure compliance, and boost customer satisfaction.',
-  benefits: [
-    'Audit critical call center metrics',
-    'Identify performance gaps and training needs',
-    'Improve resolution rates and customer experience',
-    'Ensure protocol and script adherence',
-    'Address infrastructure and drop rate issues'
-  ],
-  subServices: [
-    {
-      title: 'Call Quantity Auditing',
-      summary: 'Evaluate call volume trends and agent capacity to optimize throughput.'
-    },
-    {
-      title: 'Call Handling Time',
-      summary: 'Analyze average call durations to improve efficiency and reduce wait time.'
-    },
-    {
-      title: 'Agent Efficiency',
-      summary: 'Assess agent occupancy, adherence, and quality scores to boost productivity.'
-    },
-    {
-      title: 'Customer Resolution Audit',
-      summary: 'Review issue resolution patterns to increase first-call success rates.'
-    },
-    {
-      title: 'Call Script Adherence',
-      summary: 'Check for script usage and deviations to ensure consistent messaging.'
-    },
-    {
-      title: 'Call Drop Analysis',
-      summary: 'Identify dropped call causes and recommend system or staffing fixes.'
-    },
-    {
-      title: 'Answer Relevance Audit',
-      summary: 'Ensure agents deliver clear, concise, and relevant responses to queries.'
-    },
-    {
-      title: 'Performance Audit',
-      summary: 'Measure KPIs like cost per call, speed of answer, and forecast accuracy.'
-    }
-  ]
-
-,
+//      {
+//   id: 'call-auditing',
+//   icon: <ClipboardCheck size={32} />,
+//   title: 'Call Auditing Service',
+//   shortDescription: 'Audit call center operations for quality, efficiency, and compliance.',
+//   fullDescription: 'Our Call Auditing Services provide a deep evaluation of your customer interactions—measuring agent performance, script adherence, resolution rates, and infrastructure stability. With our checklist-driven approach, we help enhance service quality, ensure compliance, and boost customer satisfaction.',
+//   benefits: [
+//     'Audit critical call center metrics',
+//     'Identify performance gaps and training needs',
+//     'Improve resolution rates and customer experience',
+//     'Ensure protocol and script adherence',
+//     'Address infrastructure and drop rate issues'
+//   ],
+//   subServices: [
+//     {
+//       title: 'Call Quantity Auditing',
+//       summary: 'Evaluate call volume trends and agent capacity to optimize throughput.'
+//     },
+//     {
+//       title: 'Call Handling Time',
+//       summary: 'Analyze average call durations to improve efficiency and reduce wait time.'
+//     },
+//     {
+//       title: 'Agent Efficiency',
+//       summary: 'Assess agent occupancy, adherence, and quality scores to boost productivity.'
+//     },
+//     {
+//       title: 'Customer Resolution Audit',
+//       summary: 'Review issue resolution patterns to increase first-call success rates.'
+//     },
+//     {
+//       title: 'Call Script Adherence',
+//       summary: 'Check for script usage and deviations to ensure consistent messaging.'
+//     },
+//     {
+//       title: 'Call Drop Analysis',
+//       summary: 'Identify dropped call causes and recommend system or staffing fixes.'
+//     },
+//     {
+//       title: 'Answer Relevance Audit',
+//       summary: 'Ensure agents deliver clear, concise, and relevant responses to queries.'
+//     },
+//     {
+//       title: 'Performance Audit',
+//       summary: 'Measure KPIs like cost per call, speed of answer, and forecast accuracy.'
+//     }
+//   ]
+// }
+// ,
     {
       id: 'bpo',
       icon: <ClipboardCheck size={32} />,
