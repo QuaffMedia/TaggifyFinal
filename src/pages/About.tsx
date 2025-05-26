@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import { ShieldCheck, Award, Users, GraduationCap, Lightbulb, Target } from 'lucide-react';
-import { Link } from '../components/Link';
+// import { Link } from '../components/Link'; 
 
 const About: React.FC = () => {
   return (
