@@ -20,6 +20,11 @@ const Navbar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+  setIsOpen(false);
+  setShowServicesDropdown(false);
+};
+
   const toggleServicesDropdown = () => {
     setShowServicesDropdown(!showServicesDropdown);
   };
