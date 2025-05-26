@@ -108,7 +108,7 @@ const About: React.FC = () => {
             <div className="text-center">
               <div className="w-48 h-48 rounded-full overflow-hidden mx-auto mb-4">
                 <img 
-                  src="/image.png" 
+                  src="/rohit_goel.png" 
                   alt="CEO"
                   className="w-full h-full object-cover"
                 />
