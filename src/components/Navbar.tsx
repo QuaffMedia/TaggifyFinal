@@ -76,7 +76,9 @@ const Navbar: React.FC = () => {
                   <Link to="/services/bpo" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">BPO Audits</Link>
                   <Link to="/services/kpo" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">KPO Compliance</Link>
                   <Link to="/services/social-media" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">Social Media Audits</Link>
-                  <Link to="/services/data-security" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">Data Security</Link>
+                  <Link to="/services/call-auditing" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">Call Auditing</Link>
+<Link to="/services/data-security" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">Data Security</Link>
+
                 </div>
               )}
             </div>
