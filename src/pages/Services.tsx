@@ -10,55 +10,55 @@ const Services: React.FC = () => {
   const { serviceSlug } = useParams<{ serviceSlug?: string }>();
 
   const services = [
-//      {
-//   id: 'call-auditing',
-//   icon: <ClipboardCheck size={32} />,
-//   title: 'Call Auditing Service',
-//   shortDescription: 'Audit call center operations for quality, efficiency, and compliance.',
-//   fullDescription: 'Our Call Auditing Services provide a deep evaluation of your customer interactions—measuring agent performance, script adherence, resolution rates, and infrastructure stability. With our checklist-driven approach, we help enhance service quality, ensure compliance, and boost customer satisfaction.',
-//   benefits: [
-//     'Audit critical call center metrics',
-//     'Identify performance gaps and training needs',
-//     'Improve resolution rates and customer experience',
-//     'Ensure protocol and script adherence',
-//     'Address infrastructure and drop rate issues'
-//   ],
-//   subServices: [
-//     {
-//       title: 'Call Quantity Auditing',
-//       summary: 'Evaluate call volume trends and agent capacity to optimize throughput.'
-//     },
-//     {
-//       title: 'Call Handling Time',
-//       summary: 'Analyze average call durations to improve efficiency and reduce wait time.'
-//     },
-//     {
-//       title: 'Agent Efficiency',
-//       summary: 'Assess agent occupancy, adherence, and quality scores to boost productivity.'
-//     },
-//     {
-//       title: 'Customer Resolution Audit',
-//       summary: 'Review issue resolution patterns to increase first-call success rates.'
-//     },
-//     {
-//       title: 'Call Script Adherence',
-//       summary: 'Check for script usage and deviations to ensure consistent messaging.'
-//     },
-//     {
-//       title: 'Call Drop Analysis',
-//       summary: 'Identify dropped call causes and recommend system or staffing fixes.'
-//     },
-//     {
-//       title: 'Answer Relevance Audit',
-//       summary: 'Ensure agents deliver clear, concise, and relevant responses to queries.'
-//     },
-//     {
-//       title: 'Performance Audit',
-//       summary: 'Measure KPIs like cost per call, speed of answer, and forecast accuracy.'
-//     }
-//   ]
-// }
-// ,
+    {
+  id: 'call-auditing',
+  icon: <ClipboardCheck size={32} />,
+  title: 'Call Auditing Service',
+  shortDescription: 'Audit call center operations for quality, efficiency, and compliance.',
+  fullDescription: 'Our Call Auditing Services provide a deep evaluation of your customer interactions—measuring agent performance, script adherence, resolution rates, and infrastructure stability. With our checklist-driven approach, we help enhance service quality, ensure compliance, and boost customer satisfaction.',
+  benefits: [
+    'Audit critical call center metrics',
+    'Identify performance gaps and training needs',
+    'Improve resolution rates and customer experience',
+    'Ensure protocol and script adherence',
+    'Address infrastructure and drop rate issues'
+  ],
+  subServices: [
+    {
+      title: 'Call Quantity Auditing',
+      summary: 'Evaluate call volume trends and agent capacity to optimize throughput.'
+    },
+    {
+      title: 'Call Handling Time',
+      summary: 'Analyze average call durations to improve efficiency and reduce wait time.'
+    },
+    {
+      title: 'Agent Efficiency',
+      summary: 'Assess agent occupancy, adherence, and quality scores to boost productivity.'
+    },
+    {
+      title: 'Customer Resolution Audit',
+      summary: 'Review issue resolution patterns to increase first-call success rates.'
+    },
+    {
+      title: 'Call Script Adherence',
+      summary: 'Check for script usage and deviations to ensure consistent messaging.'
+    },
+    {
+      title: 'Call Drop Analysis',
+      summary: 'Identify dropped call causes and recommend system or staffing fixes.'
+    },
+    {
+      title: 'Answer Relevance Audit',
+      summary: 'Ensure agents deliver clear, concise, and relevant responses to queries.'
+    },
+    {
+      title: 'Performance Audit',
+      summary: 'Measure KPIs like cost per call, speed of answer, and forecast accuracy.'
+    }
+  ]
+}
+,
     {
       id: 'bpo',
       icon: <ClipboardCheck size={32} />,
@@ -256,41 +256,60 @@ const Services: React.FC = () => {
         
         {/* Service Process Section */}
     {/* Service Process Section */}
-<section className="bg-gray-50 min-h-screen my-4 lg:py-2 flex items-center">
-  <div className="container mx-auto px-4">
-    <div className="text-center mb-6">
-      <h2 className="text-3xl font-bold mb-3">Our Approach</h2>
-      <p className="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
-        We follow a structured methodology to ensure comprehensive and actionable audit results.
-      </p>
-    </div>
+          {service.id === 'call-auditing' ? (
+  <section className="py-20 bg-gray-50">
+    <div className="container mx-auto px-4">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold mb-4">Call Audit Focus Areas</h2>
+        <p className="text-gray-600 max-w-2xl mx-auto">
+          Our auditing framework spans all key performance and quality metrics critical to modern call center operations.
+        </p>
+      </div>
 
-    <div className="max-w-4xl mx-auto">
-      <div className="space-y-4">
-        {service.process.map((step, index) => (
-          <div key={index} className="relative">
-            {/* Connecting line - shown only on desktop */}
-            {index < service.process.length - 1 && (
-              <div className="absolute left-1/2 sm:left-8 transform -translate-x-1/2 sm:translate-x-0 top-14 bottom-0 w-1 bg-blue-400 hidden sm:block"></div>
-            )}
-
-            <div className="flex flex-col sm:flex-row sm:items-start items-center gap-4 text-center sm:text-left">
-              {/* Number bubble */}
-              <div className="flex-shrink-0 bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shadow-md z-10">
-                {index + 1}
-              </div>
-
-              {/* Step Content */}
-              <div className="flex-grow bg-white rounded-lg shadow p-4 border-l-4 border-blue-600 hover:shadow-lg transition-shadow duration-300 text-sm">
-                <p className="text-gray-700">{step}</p>
-              </div>
-            </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        {service.subServices?.map((item, index) => (
+          <div key={index} className="bg-white rounded-lg shadow p-6 border-l-4 border-blue-600 hover:shadow-lg transition-shadow">
+            <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+            <p className="text-gray-600 text-sm">{item.summary}</p>
           </div>
         ))}
       </div>
     </div>
-  </div>
-</section>
+  </section>
+) : (
+  // Keep original "Our Approach" section
+  <section className="bg-gray-50 min-h-screen my-4 lg:py-2 flex items-center">
+    <div className="container mx-auto px-4">
+      <div className="text-center mb-6">
+        <h2 className="text-3xl font-bold mb-3">Our Approach</h2>
+        <p className="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
+          We follow a structured methodology to ensure comprehensive and actionable audit results.
+        </p>
+      </div>
+
+      <div className="max-w-4xl mx-auto">
+        <div className="space-y-4">
+          {service.process.map((step, index) => (
+            <div key={index} className="relative">
+              {index < service.process.length - 1 && (
+                <div className="absolute left-1/2 sm:left-8 transform -translate-x-1/2 sm:translate-x-0 top-14 bottom-0 w-1 bg-blue-400 hidden sm:block"></div>
+              )}
+              <div className="flex flex-col sm:flex-row sm:items-start items-center gap-4 text-center sm:text-left">
+                <div className="flex-shrink-0 bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shadow-md z-10">
+                  {index + 1}
+                </div>
+                <div className="flex-grow bg-white rounded-lg shadow p-4 border-l-4 border-blue-600 hover:shadow-lg transition-shadow duration-300 text-sm">
+                  <p className="text-gray-700">{step}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+)}
+
 
         
         {/* CTA Section */}
