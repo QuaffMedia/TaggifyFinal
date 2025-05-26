@@ -119,7 +119,7 @@ const Navbar: React.FC = () => {
   </button>
   {showServicesDropdown && (
     <div className="pl-4 flex flex-col space-y-2 mb-2">
-      <Link to="/services/call-auditing" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">Call Auditing</Link>
+      <Link to="/services/call-auditing" className="block py-2 text-gray-800 hover:bg-blue-50">Call Auditing</Link>
       <Link to="/services/bpo" className="text-gray-700 hover:text-blue-700">BPO Audits</Link>
       <Link to="/services/kpo" className="text-gray-700 hover:text-blue-700">KPO Compliance</Link>
       <Link to="/services/social-media" className="text-gray-700 hover:text-blue-700">Social Media Audits</Link>
