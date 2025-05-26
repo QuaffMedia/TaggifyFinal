@@ -62,8 +62,7 @@ const Process: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
         <div className="rounded-lg overflow-hidden shadow-lg">
           <img 
-            src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" 
-            alt="Requirement Briefing" 
+            src="https://unsplash.com/photos/workflow-diagram-product-brief-and-user-goals-are-shown-wdnpaTNwOEQ" 
             className="w-full h-auto"
           />
         </div>
