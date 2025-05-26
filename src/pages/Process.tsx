@@ -49,221 +49,138 @@ const Process: React.FC = () => {
       
       {/* Process Overview Section */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">A Structured Approach to Excellence</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              Our audit methodology follows a comprehensive, structured approach that ensures thorough evaluation and actionable insights.
-            </p>
-          </div>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://images.pexels.com/photos/4342498/pexels-photo-4342498.jpeg" 
-                  alt="Initial consultation"
-                  className="w-full h-auto"
-                />
-              </div>
-              
-              <div>
-                <div className="bg-blue-100 rounded-full p-4 inline-block mb-4">
-                  <MessageSquare className="text-blue-600" size={24} />
-                </div>
-                <h3 className="text-2xl font-semibold mb-4">1. Initial Consultation</h3>
-                <p className="text-gray-600 mb-4">
-                  We begin by understanding your operations, requirements, and specific compliance needs. This initial discussion helps us tailor our audit approach to your unique circumstances.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Comprehensive discussion of your operations</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Identification of key compliance requirements</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Preliminary assessment of potential focus areas</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-              <div className="order-2 md:order-1">
-                <div className="bg-blue-100 rounded-full p-4 inline-block mb-4">
-                  <Settings className="text-blue-600" size={24} />
-                </div>
-                <h3 className="text-2xl font-semibold mb-4">2. Scope Definition</h3>
-                <p className="text-gray-600 mb-4">
-                  We define the scope of the audit, outlining areas to be evaluated and establishing clear objectives. This ensures a focused approach that addresses your most critical needs.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Detailed scope document outlining audit parameters</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Agreement on timeframes and deliverables</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Definition of success criteria and expected outcomes</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <div className="order-1 md:order-2 rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg" 
-                  alt="Scope definition"
-                  className="w-full h-auto"
-                />
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://images.pexels.com/photos/7688460/pexels-photo-7688460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                  alt="Audit execution"
-                  className="w-full h-auto"
-                />
-              </div>
-              
-              <div>
-                <div className="bg-blue-100 rounded-full p-4 inline-block mb-4">
-                  <ClipboardCheck className="text-blue-600" size={24} />
-                </div>
-                <h3 className="text-2xl font-semibold mb-4">3. Audit Execution</h3>
-                <p className="text-gray-600 mb-4">
-                  Our team conducts a thorough on-site evaluation, examining processes, documentation, and compliance measures. We use a combination of observation, interviews, and document review to gather comprehensive data.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Process observation and evaluation</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Staff interviews and skill assessment</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Documentation review and compliance verification</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-              <div className="order-2 md:order-1">
-                <div className="bg-blue-100 rounded-full p-4 inline-block mb-4">
-                  <FileText className="text-blue-600" size={24} />
-                </div>
-                <h3 className="text-2xl font-semibold mb-4">4. Findings Documentation</h3>
-                <p className="text-gray-600 mb-4">
-                  We document our observations, compliance issues, and areas for improvement in a comprehensive report. Our findings are presented with clear evidence and context to ensure understanding.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Detailed documentation of observations</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Analysis of compliance gaps and operational inefficiencies</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Prioritization of issues based on risk and impact</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <div className="order-1 md:order-2 rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://images.pexels.com/photos/955390/pexels-photo-955390.jpeg" 
-                  alt="Documentation process"
-                  className="w-full h-auto"
-                />
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  
-                  alt="Recommendations discussion"
-                  className="w-full h-auto"
-                />
-              </div>
-              
-              <div>
-                <div className="bg-blue-100 rounded-full p-4 inline-block mb-4">
-                  <Tool className="text-blue-600" size={24} />
-                </div>
-                <h3 className="text-2xl font-semibold mb-4">5. Recommendations</h3>
-                <p className="text-gray-600 mb-4">
-                  Based on our findings, we provide detailed recommendations to address issues and enhance compliance. Our recommendations are practical, prioritized, and tailored to your specific situation.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Specific, actionable improvement strategies</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Prioritized implementation roadmap</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Cost-benefit analysis of recommended changes</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              <div className="order-2 md:order-1">
-                <div className="bg-blue-100 rounded-full p-4 inline-block mb-4">
-                  <HeartHandshake className="text-blue-600" size={24} />
-                </div>
-                <h3 className="text-2xl font-semibold mb-4">6. Follow-up Support</h3>
-                <p className="text-gray-600 mb-4">
-                  We offer ongoing support to help implement recommended changes and ensure sustained compliance. Our team remains available to address questions and provide guidance as needed.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Implementation guidance and support</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Progress check-ins and milestone reviews</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1.5"></div>
-                    <span className="text-gray-600">Ongoing advisory support for emerging compliance issues</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <div className="order-1 md:order-2 rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://images.pexels.com/photos/7654609/pexels-photo-7654609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                  alt="Follow-up support"
-                  className="w-full h-auto"
-                />
-              </div>
-            </div>
-          </div>
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Refined Auditing Framework</h2>
+      <p className="text-gray-600 max-w-3xl mx-auto">
+        A 6-step process designed for precision, transparency, and results—ensuring every audit delivers measurable value.
+      </p>
+    </div>
+
+    <div className="max-w-4xl mx-auto">
+      {/* Step 1 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+        <div className="rounded-lg overflow-hidden shadow-lg">
+          <img 
+            src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" 
+            alt="Requirement Briefing" 
+            className="w-full h-auto"
+          />
         </div>
-      </section>
+        <div>
+          <div className="bg-blue-100 rounded-full p-4 inline-block mb-4">
+            <MessageSquare className="text-blue-600" size={24} />
+          </div>
+          <h3 className="text-2xl font-semibold mb-4">1. Requirement Briefing</h3>
+          <p className="text-gray-600">
+            We begin by gathering a detailed understanding of your service needs and defining success metrics within mutually agreed SLAs and pricing terms.
+          </p>
+        </div>
+      </div>
+
+      {/* Step 2 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+        <div className="order-2 md:order-1">
+          <div className="bg-blue-100 rounded-full p-4 inline-block mb-4">
+            <FileText className="text-blue-600" size={24} />
+          </div>
+          <h3 className="text-2xl font-semibold mb-4">2. Secure Data Transfer</h3>
+          <p className="text-gray-600">
+            Client recordings and related data are securely transferred to our servers through encrypted channels, ensuring complete confidentiality and data integrity.
+          </p>
+        </div>
+        <div className="order-1 md:order-2 rounded-lg overflow-hidden shadow-lg">
+          <img 
+            src="https://images.pexels.com/photos/5380643/pexels-photo-5380643.jpeg" 
+            alt="Secure Data Transfer" 
+            className="w-full h-auto"
+          />
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+        <div className="rounded-lg overflow-hidden shadow-lg">
+          <img 
+            src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg" 
+            alt="Team Resource Allocation" 
+            className="w-full h-auto"
+          />
+        </div>
+        <div>
+          <div className="bg-blue-100 rounded-full p-4 inline-block mb-4">
+            <Settings className="text-blue-600" size={24} />
+          </div>
+          <h3 className="text-2xl font-semibold mb-4">3. Resource Deployment</h3>
+          <p className="text-gray-600">
+            Based on project scope, we assign qualified auditors and configure required tools to deliver efficient and accurate results.
+          </p>
+        </div>
+      </div>
+
+      {/* Step 4 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+        <div className="order-2 md:order-1">
+          <div className="bg-blue-100 rounded-full p-4 inline-block mb-4">
+            <ClipboardCheck className="text-blue-600" size={24} />
+          </div>
+          <h3 className="text-2xl font-semibold mb-4">4. Call Analysis</h3>
+          <p className="text-gray-600">
+            Our auditors follow a structured checklist to review each call recording, identifying compliance gaps and improvement areas through detailed logs.
+          </p>
+        </div>
+        <div className="order-1 md:order-2 rounded-lg overflow-hidden shadow-lg">
+          <img 
+            src="https://images.pexels.com/photos/8867430/pexels-photo-8867430.jpeg" 
+            alt="Call Analysis Process" 
+            className="w-full h-auto"
+          />
+        </div>
+      </div>
+
+      {/* Step 5 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+        <div className="rounded-lg overflow-hidden shadow-lg">
+          <img 
+            src="https://images.pexels.com/photos/8296981/pexels-photo-8296981.jpeg" 
+            alt="Quality Review" 
+            className="w-full h-auto"
+          />
+        </div>
+        <div>
+          <div className="bg-blue-100 rounded-full p-4 inline-block mb-4">
+            <Tool className="text-blue-600" size={24} />
+          </div>
+          <h3 className="text-2xl font-semibold mb-4">5. Quality Validation</h3>
+          <p className="text-gray-600">
+            Every report is cross-verified for consistency and accuracy, ensuring that the final findings reflect facts and meet the pre-defined quality benchmarks.
+          </p>
+        </div>
+      </div>
+
+      {/* Step 6 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="order-2 md:order-1">
+          <div className="bg-blue-100 rounded-full p-4 inline-block mb-4">
+            <HeartHandshake className="text-blue-600" size={24} />
+          </div>
+          <h3 className="text-2xl font-semibold mb-4">6. Final Delivery & Data Sanitization</h3>
+          <p className="text-gray-600">
+            Once vetted, the final audit report is securely delivered. All call recordings are returned, and our systems are purged of client data per our privacy policy.
+          </p>
+        </div>
+        <div className="order-1 md:order-2 rounded-lg overflow-hidden shadow-lg">
+          <img 
+            src="https://images.pexels.com/photos/3182763/pexels-photo-3182763.jpeg" 
+            alt="Final Delivery" 
+            className="w-full h-auto"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       
       {/* FAQ Section */}
       <section className="py-20 bg-gray-50">
