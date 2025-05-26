@@ -62,9 +62,11 @@ const Process: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
         <div className="rounded-lg overflow-hidden shadow-lg">
           <img 
-            src="https://unsplash.com/photos/workflow-diagram-product-brief-and-user-goals-are-shown-wdnpaTNwOEQ" 
-            className="w-full h-auto"
-          />
+  src="https://images.pexels.com/photos/8555676/pexels-photo-8555676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+  alt="Requirement Briefing" 
+  className="w-full h-auto"
+/>
+
         </div>
         <div>
           <div className="bg-blue-100 rounded-full p-4 inline-block mb-4">
