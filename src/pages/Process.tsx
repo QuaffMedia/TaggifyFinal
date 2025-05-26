@@ -1,7 +1,14 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import ProcessStep from '../components/ProcessStep';
-import { ClipboardCheck, Settings, MessageSquare, FileText, PenTool as Tool, HeartHandshake } from 'lucide-react';
+import {
+  ClipboardCheck,
+  Settings,
+  MessageSquare,
+  FileText,
+  PenTool as Tool,
+  HeartHandshake
+} from 'lucide-react';
 import { Link } from '../components/Link';
 
 const Process: React.FC = () => {
