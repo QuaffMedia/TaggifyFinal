@@ -57,7 +57,7 @@ const Services: React.FC = () => {
       summary: 'Measure KPIs like cost per call, speed of answer, and forecast accuracy.'
     }
   ]
-}
+
 ,
     {
       id: 'bpo',
