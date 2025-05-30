@@ -154,7 +154,7 @@ Masters in professional accounting, Australia
             <div className="text-center">
   <div className="w-48 h-48 rounded-full overflow-hidden mx-auto mb-4">
     <img 
-      src="/image.png" 
+      src="/sarthak.png" 
       alt="CSO"
       className="w-full h-full object-cover"
     />
