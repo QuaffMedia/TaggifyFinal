@@ -65,7 +65,6 @@ const Navbar: React.FC = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             <Link onClick={closeMenu} to="/" className={linkClasses}>Home</Link>
-            <Link onClick={closeMenu} to="/about" className={linkClasses}>About Us</Link>
             <div className="relative services-dropdown">
               <button 
   className={`${isScrolled ? 'text-gray-800':'text-white'} flex items-center`}
@@ -91,6 +90,8 @@ const Navbar: React.FC = () => {
             <Link onClick={closeMenu} to="/industries" className={linkClasses}>Industries</Link>
             <Link onClick={closeMenu} to="/process" className={linkClasses}>Process</Link>
             <Link onClick={closeMenu} to="/clients" className={linkClasses}>Clients</Link>
+            
+            <Link onClick={closeMenu} to="/about" className={linkClasses}>About Us</Link>
             {/* <Link onClick={closeMenu} to="/resources" className={linkClasses}>Resources</Link> */}
             <Link onClick={closeMenu} to="/contact" className={linkClasses}>Contact</Link>
           </div>
@@ -111,7 +112,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden mt-4 bg-white rounded-lg shadow-lg p-4">
             <div className="flex flex-col space-y-3">
               <Link onClick={closeMenu} to="/" className="text-gray-800 hover:text-blue-700">Home</Link>
-              <Link onClick={closeMenu} to="/about" className="text-gray-800 hover:text-blue-700">About Us</Link>
+           
               <div>
   <button 
     className="text-gray-800 font-medium mb-1 flex items-center"
@@ -135,6 +136,7 @@ const Navbar: React.FC = () => {
               <Link onClick={closeMenu} to="/industries" className="text-gray-800 hover:text-blue-700">Industries</Link>
               <Link onClick={closeMenu} to="/process" className="text-gray-800 hover:text-blue-700">Process</Link>
               <Link onClick={closeMenu} to="/clients" className="text-gray-800 hover:text-blue-700">Clients</Link>
+                 <Link onClick={closeMenu} to="/about" className="text-gray-800 hover:text-blue-700">About Us</Link>
               {/* <Link onClick={closeMenu} to="/resources" className="text-gray-800 hover:text-blue-700">Resources</Link> */}
               <Link onClick={closeMenu} to="/contact" className="text-gray-800 hover:text-blue-700">Contact</Link>
             </div> 
