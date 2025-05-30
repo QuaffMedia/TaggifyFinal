@@ -40,7 +40,7 @@ const Home: React.FC = () => {
     <div>
       <Hero 
         title="Leading Audit Services for Global Client-Facing Operations"
-        subtitle="Led by former Big Four, we provide compliance-driven audit solutions for BPOs, KPOs, and social media agencies—building trust between Indian teams and Global Clients."
+        subtitle="Led by former Big Four, we provide compliance-driven audit solutions for BPOs, KPOs, and social media agencies—building trust with Global Clients."
         backgroundImage="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       />
       
