@@ -22,45 +22,49 @@ const ContactForm: React.FC = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    try {
-      const response = await fetch('https://formsubmit.co/ajax/info@taggifyaudit.com', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-        body: JSON.stringify({
-          ...formData,
-          _subject: 'New Contact Submission - TrustAudit',
-          _from: 'TrustAudit Website',
-          _captcha: false,
-           _replyto: formData.email, 
-        }),
+  try {
+    const formPayload = new URLSearchParams();
+    Object.entries(formData).forEach(([key, value]) => {
+      formPayload.append(key, value);
+    });
+
+    // Add hidden FormSubmit fields
+    formPayload.append('_subject', 'New Contact Submission - TrustAudit');
+    formPayload.append('_from', 'TrustAudit Website');
+    formPayload.append('_captcha', 'false');
+    formPayload.append('_replyto', formData.email);
+
+    const response = await fetch('https://formsubmit.co/info@taggifyaudit.com', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: formPayload.toString(),
+    });
+
+    if (response.ok) {
+      setSubmitSuccess(true);
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        message: '',
+        service: '',
       });
-      console.log("submitted")
-      if (response.ok) {
-        setSubmitSuccess(true);
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          company: '',
-          message: '',
-          service: '',
-        });
-        setTimeout(() => setSubmitSuccess(false), 5000);
-      } else {
-        alert('Failed to send. Please try again.');
-      }
-    } catch (err) {
-      alert('Error submitting the form.');
-    } finally {
-      setIsSubmitting(false);
+      setTimeout(() => setSubmitSuccess(false), 5000);
+    } else {
+      alert('Failed to send. Please try again.');
     }
-  };
+  } catch (err) {
+    alert('Error submitting the form.');
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <form
