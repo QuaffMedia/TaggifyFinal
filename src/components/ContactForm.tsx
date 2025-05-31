@@ -37,6 +37,7 @@ const ContactForm: React.FC = () => {
           _subject: 'New Contact Submission - TrustAudit',
           _from: 'TrustAudit Website',
           _captcha: false,
+           _replyto: formData.email, 
         }),
       });
       console.log("submitted")
