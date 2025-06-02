@@ -66,10 +66,26 @@ _autoresponse: `Hi ${formData.name || 'there'},\n\nThank you for contacting Trus
 
   return (
     <form
-      onSubmit={handleSubmit}
-      className="bg-white rounded-lg shadow-lg p-8"
-      id="contact-form"
-    >
+  action="https://formsubmit.co/info@taggifyaudit.com"
+  method="POST"
+  className="bg-white rounded-lg shadow-lg p-8"
+>
+  {/* Hidden Inputs for FormSubmit behavior */}
+  <input type="hidden" name="_subject" value="New Contact Submission - TrustAudit" />
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_template" value="table" />
+  <input
+    type="hidden"
+    name="_autoresponse"
+    value="Hi there,
+
+Thank you for contacting TrustAudit. We’ve received your message and will respond within 24 hours.
+
+Visit us at https://taggifyaudit.com
+
+Best,
+Team TrustAudit"
+  />
       <div className="mb-8">
         <h3 className="text-2xl font-bold mb-2">Get in Touch</h3>
         <p className="text-gray-600">
