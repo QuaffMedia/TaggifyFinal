@@ -21,48 +21,46 @@ const ContactForm: React.FC = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    try {
-      const response = await fetch('https://formsubmit.co/ajax/info@taggifyaudit.com', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-       body: JSON.stringify({
-  ...formData,
-  _subject: 'New Contact Submission - TrustAudit',
-  _from: 'TrustAudit Website',
-  _captcha: false,
-  _replyto: formData.email,
-_autoresponse: `Hi ${formData.name || 'there'},\n\nThank you for contacting TrustAudit. We’ve received your message and will respond within 24 hours.\n\nVisit us at https://taggifyaudit.com\n\nBest,\nTeam TrustAudit`,
+  try {
+    const response = await fetch('https://formspree.io/f/xeokqeer', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        company: formData.company,
+        message: formData.message,
+        service: formData.service,
+      }),
+    });
 
-}),
+    if (response.ok) {
+      setSubmitSuccess(true);
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        message: '',
+        service: '',
       });
-      console.log("submitted")
-      if (response.ok) {
-        setSubmitSuccess(true);
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          company: '',
-          message: '',
-          service: '',
-        });
-        setTimeout(() => setSubmitSuccess(false), 5000);
-      } else {
-        alert('Failed to send. Please try again.');
-      }
-    } catch (err) {
-      alert('Error submitting the form.');
-    } finally {
-      setIsSubmitting(false);
+      setTimeout(() => setSubmitSuccess(false), 5000);
+    } else {
+      alert('Failed to send. Please try again.');
     }
-  };
+  } catch (err) {
+    alert('Error submitting the form.');
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-lg p-8" id="contact-form" >
