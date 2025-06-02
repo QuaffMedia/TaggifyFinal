@@ -38,31 +38,8 @@ const ContactForm: React.FC = () => {
   _from: 'TrustAudit Website',
   _captcha: false,
   _replyto: formData.email,
- _autoresponse: `
-  <div style="font-family: Arial, sans-serif; color: #333; background-color: #f9f9f9; padding: 30px;">
-    <div style="max-width: 600px; margin: auto; background: #ffffff; border-radius: 8px; padding: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-      <div style="text-align: center;">
-        <img src="https://taggifyaudit.com/logo.png" alt="TrustAudit Logo" style="max-width: 120px; margin-bottom: 20px;" />
-      </div>
-      
-      <h2 style="color: #1e40af; font-size: 22px;">Thank you for contacting TrustAudit!</h2>
-      
-      <p style="font-size: 16px; line-height: 1.6;">
-        Hi ${formData.name || 'there'},<br><br>
-        We’ve received your message and one of our audit experts will get back to you within <strong>24 hours</strong>.<br><br>
-        If your inquiry is urgent, feel free to call us at <a href="tel:+919876543210" style="color: #1e40af;">+91 98765 43210</a> or reply directly to this email.
-      </p>
+_autoresponse: `Hi ${formData.name || 'there'},\n\nThank you for contacting TrustAudit. We’ve received your message and will respond within 24 hours.\n\nVisit us at https://taggifyaudit.com\n\nBest,\nTeam TrustAudit`,
 
-      <hr style="margin: 30px 0; border: none; border-top: 1px solid #eaeaea;" />
-
-      <p style="font-size: 15px; color: #555;">
-        Best regards,<br>
-        <strong>Team TrustAudit</strong><br>
-        <a href="https://taggifyaudit.com" style="color: #1e40af; text-decoration: none;">www.taggifyaudit.com</a>
-      </p>
-    </div>
-  </div>
-` // paste the HTML content above here
 }),
       });
       console.log("submitted")
