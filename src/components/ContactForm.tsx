@@ -1,94 +1,186 @@
-const nodemailer = require('nodemailer');
+import React, { useState } from 'react';
+import { Send } from 'lucide-react';
 
-// Create transporter with Zoho SMTP settings
-const transporter = nodemailer.createTransport({
-  host: 'smtp.zoho.in',
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.ZOHO_USER,
-    pass: process.env.ZOHO_PASS
-  }
-});
+const ContactForm: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    company: '',
+    message: '',
+    service: '',
+  });
 
-// Admin email HTML content
-const getAdminEmailContent = (data) => `
-  <div style="font-family: Arial, sans-serif; padding: 20px; color: #333;">
-    <h2>📩 New Contact Form Submission</h2>
-    <p><strong>Name:</strong> ${data.name}</p>
-    <p><strong>Email:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
-    <p><strong>Phone:</strong> <a href="tel:${data.phone}">${data.phone || 'Not provided'}</a></p>
-    <p><strong>Company:</strong> ${data.company}</p>
-    <p><strong>Service Interest:</strong> ${data.service || 'Not specified'}</p>
-    <p><strong>Message:</strong></p>
-    <div style="margin-top: 10px; padding: 10px; background-color: #f5f5f5; border-radius: 4px;">
-      ${data.message}
-    </div>
-    <hr style="margin-top: 30px;" />
-    <p style="font-size: 12px; color: #777;">Sent via Taggify Website Form</p>
-  </div>
-`;
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
 
-// User email HTML content
-const getUserEmailContent = (name) => `
-  <div style="font-family: Arial, sans-serif; padding: 20px; color: #333;">
-    <h2 style="color: #1a73e8;">Thank you for contacting Taggify!</h2>
-    <p>Hi ${name},</p>
-    <p>We’ve received your message and appreciate your interest in our audit services.</p>
-    <p>One of our experts will review your inquiry and get back to you within <strong>24 hours</strong>.</p>
-    <p>If it's urgent, feel free to call us at <a href="tel:+919876543210">+91 98765 43210</a>.</p>
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
-    <br />
-    <p>Best regards,</p>
-    <p><strong>Team Taggify</strong><br />
-    <a href="https://taggifyaudit.com" style="color: #1a73e8;">www.taggifyaudit.com</a></p>
-  </div>
-`;
-
-exports.handler = async (event) => {
-  if (event.httpMethod !== 'POST') {
-    return {
-      statusCode: 405,
-      body: JSON.stringify({ error: 'Method not allowed' })
-    };
-  }
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
   try {
-    const data = JSON.parse(event.body);
+    const response = await fetch('/.netlify/functions/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData), // Ensure this includes: name, email, phone, company, message, service
+    });
 
-    if (!data.name || !data.email || !data.message || !data.company) {
-      return {
-        statusCode: 400,
-        body: JSON.stringify({ error: 'Missing required fields' })
-      };
+    if (response.ok) {
+      setSubmitSuccess(true);
+
+      // Clear form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        message: '',
+        service: '',
+      });
+
+      // Optionally reset success message after a delay
+      setTimeout(() => setSubmitSuccess(false), 3000);
+    } else {
+      const errorData = await response.json();
+      alert(`Failed to submit form: ${errorData.error || 'Unknown error'}`);
     }
-
-    // Email to Admin (you)
-    await transporter.sendMail({
-      from: `"Taggify" <${process.env.ZOHO_USER}>`,
-      to: 'info@taggifyaudit.com',
-      replyTo: data.email,
-      subject: 'New Contact Form Submission',
-      html: getAdminEmailContent(data),
-    });
-
-    // Auto-reply to User
-    await transporter.sendMail({
-      from: `"Taggify" <${process.env.ZOHO_USER}>`,
-      to: data.email,
-      subject: 'Thank you for contacting Taggify',
-      html: getUserEmailContent(data.name),
-    });
-
-    return {
-      statusCode: 200,
-      body: JSON.stringify({ success: true })
-    };
   } catch (error) {
-    console.error('Error processing contact form:', error);
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: 'Failed to process contact form submission' })
-    };
+    console.error('Submission error:', error);
+    alert('Something went wrong. Please try again later.');
+  } finally {
+    setIsSubmitting(false);
   }
 };
+
+  return (
+    <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-lg p-8" id="contact-form" >
+      <div className="mb-8">
+        <h3 className="text-2xl font-bold mb-2">Get in Touch</h3>
+        <p className="text-gray-600">
+          Have questions about our audit services? Fill out the form below and our team will get back to you shortly.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+          <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Full Name *</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="John Doe"
+          />
+        </div>
+        <div>
+          <label htmlFor="email" className="block text-gray-700 font-medium mb-2">Email Address *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="john@example.com"
+          />
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+          <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="+91 98765 43210"
+          />
+        </div>
+        <div>
+          <label htmlFor="company" className="block text-gray-700 font-medium mb-2">Company Name *</label>
+          <input
+            type="text"
+            id="company"
+            name="company"
+            value={formData.company}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Your Company Ltd."
+          />
+        </div>
+      </div>
+
+      <div className="mb-6">
+        <label htmlFor="service" className="block text-gray-700 font-medium mb-2">Service of Interest</label>
+        <select
+          id="service"
+          name="service"
+          value={formData.service}
+          onChange={handleChange}
+          className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <option value="">Select a service</option>
+          <option value="bpo">BPO Operations Audit</option>
+          <option value="kpo">KPO Compliance Verification</option>
+          <option value="social-media">Social Media Operations Audit</option>
+          <option value="data-security">Data Security Compliance</option>
+          <option value="process">Process Efficiency Evaluation</option>
+          <option value="risk">Risk Management Consulting</option>
+        </select>
+      </div>
+
+      <div className="mb-6">
+        <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Your Message *</label>
+        <textarea
+          id="message"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          required
+          rows={5}
+          className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Please describe your requirements or questions..."
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        disabled={isSubmitting}
+        className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors duration-300 disabled:bg-blue-400"
+      >
+        {isSubmitting ? (
+          <>Processing...</>
+        ) : (
+          <>
+            Send Message <Send size={16} className="ml-2" />
+          </>
+        )}
+      </button>
+
+      {submitSuccess && ( 
+        <div className="mt-4 p-3 bg-green-100 text-green-700 rounded-md">
+          Thank you for your message! We'll get back to you as soon as possible.
+        </div>
+      )}
+    </form>
+  );
+};
+
+export default ContactForm;
