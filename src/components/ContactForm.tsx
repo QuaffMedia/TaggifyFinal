@@ -48,7 +48,7 @@ const ContactForm: React.FC = () => {
       });
 
       // Optionally reset success message after a delay
-      setTimeout(() => setSubmitSuccess(false), 5000);
+      setTimeout(() => setSubmitSuccess(false), 3000);
     } else {
       const errorData = await response.json();
       alert(`Failed to submit form: ${errorData.error || 'Unknown error'}`);
