@@ -59,19 +59,21 @@ exports.handler = async (event) => {
 
     // Send email to admin
     await transporter.sendMail({
-      from: process.env.ZOHO_USER,
-      to: 'info@taggifyaudit.com',
-      subject: 'New Contact Form Submission',
-      text: getAdminEmailContent(data)
-    });
+  from: `"Taggify" <${process.env.ZOHO_USER}>`,
+  to: 'info@taggifyaudit.com',
+  replyTo: data.email, // ← lets you see user's email when replying
+  subject: 'New Contact Form Submission',
+  html: getAdminEmailContent(data),
+});
 
     // Send auto-reply to user
-    await transporter.sendMail({
-      from: process.env.ZOHO_USER,
-      to: data.email,
-      subject: 'Thank you for contacting Taggify',
-      text: getUserEmailContent(data.name)
-    });
+   await transporter.sendMail({
+  from: `"Taggify" <${process.env.ZOHO_USER}>`,
+  to: data.email,
+  subject: 'Thank you for contacting Taggify',
+  html: getUserEmailContent(data.name),
+});
+
 
     return {
       statusCode: 200,
