@@ -36,7 +36,7 @@ const getUserEmailContent = (name) => `
     <p>Hi ${name},</p>
     <p>We’ve received your message and appreciate your interest in our audit services.</p>
     <p>One of our experts will review your inquiry and get back to you within <strong>24 hours</strong>.</p>
-    <p>If it's urgent, feel free to call us at <a href="tel:+919876543210">+91 98765 43210</a>.</p>
+    <p>If it's urgent, feel free to call us at <a href="tel:+91-8005540849‬">+91-8005540849‬</a>.</p>
 
     <br />
     <p>Best regards,</p>
