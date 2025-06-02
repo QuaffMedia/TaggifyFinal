@@ -26,23 +26,18 @@ const ContactForm: React.FC = () => {
   setIsSubmitting(true);
 
   try {
-    const response = await fetch('https://formspree.io/f/xeokqeer', {
+    const response = await fetch('/.netlify/functions/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        company: formData.company,
-        message: formData.message,
-        service: formData.service,
-      }),
+      body: JSON.stringify(formData), // Ensure this includes: name, email, phone, company, message, service
     });
 
     if (response.ok) {
       setSubmitSuccess(true);
+
+      // Clear form
       setFormData({
         name: '',
         email: '',
@@ -51,12 +46,16 @@ const ContactForm: React.FC = () => {
         message: '',
         service: '',
       });
+
+      // Optionally reset success message after a delay
       setTimeout(() => setSubmitSuccess(false), 5000);
     } else {
-      alert('Failed to send. Please try again.');
+      const errorData = await response.json();
+      alert(`Failed to submit form: ${errorData.error || 'Unknown error'}`);
     }
-  } catch (err) {
-    alert('Error submitting the form.');
+  } catch (error) {
+    console.error('Submission error:', error);
+    alert('Something went wrong. Please try again later.');
   } finally {
     setIsSubmitting(false);
   }
