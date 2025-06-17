@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
         rel="noopener noreferrer"
         className="text-gray-500 hover:text-gray-300 transition-colors"
       >
-        maintained by a unit of quaff global services
+        Maintained by a unit of Quaff Global Services
       </a>
     </div>
     <div className="md:text-right">
