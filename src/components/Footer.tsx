@@ -78,8 +78,8 @@ const Footer: React.FC = () => {
         
         {/* Legal Information */}
        <div className="text-sm text-gray-500">
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
-    <div>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center text-center md:text-left">
+    <div className="md:text-left">
       <p>© 2024 Taggify. All rights reserved.</p>
       <p className="mt-2">
         {/* CIN: U62099HR2024PTC118110 | PAN: AAKCT7010Q | TAN: RTKT09071G */}
@@ -90,9 +90,9 @@ const Footer: React.FC = () => {
         href="https://www.quaffglobalservices.com/" 
         target="_blank" 
         rel="noopener noreferrer"
-        className="text-gray-500 hover:text-gray-300 transition-colors"
+        className="text-blue-400 hover:text-blue-300 transition-colors underline hover:no-underline"
       >
-        Maintained by a unit of Quaff Global Services
+        maintained by a unit of quaff global services
       </a>
     </div>
     <div className="md:text-right">
