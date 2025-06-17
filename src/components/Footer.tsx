@@ -90,9 +90,9 @@ const Footer: React.FC = () => {
         href="https://www.quaffglobalservices.com/" 
         target="_blank" 
         rel="noopener noreferrer"
-        className="text-blue-400 hover:text-blue-300 transition-colors underline hover:no-underline"
+        className="text-blue-400 hover:text-blue-300 transition-colors  hover:underline"
       >
-        maintained by a unit of quaff global services
+       Maintained by a unit of Quaff Global Services
       </a>
     </div>
     <div className="md:text-right">
