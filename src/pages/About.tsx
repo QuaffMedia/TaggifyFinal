@@ -70,6 +70,7 @@ const About: React.FC = () => {
                 Registered as a private limited company under the Companies Act, 2013.
               </p>
               <p className="font-medium">CIN: U62099HR2024PTC118110</p>
+              <p>Company name - Quaff Media Private limited</p >
             </div>
             
             <div className="bg-white rounded-lg shadow-md p-8">
