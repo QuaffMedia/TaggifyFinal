@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Our Location</h3>
                     <p className="text-gray-600">
-                      65, Sector-12, HUDA, Panipat, Haryana - 132103, India
+                      M-Block, AII, Sector 125, Noida, Uttar Pradesh 201313
                     </p>
                   </div>
                 </div>
