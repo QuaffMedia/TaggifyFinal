@@ -314,7 +314,7 @@ const Home: React.FC = () => {
               <div className="bg-gray-100 rounded-lg p-8 h-full">
                 <h3 className="text-2xl font-bold mb-6">Visit Our Office</h3>
                 <p className="text-gray-600 mb-6">
-                  65, Sector-12, HUDA, Panipat, Haryana - 132103, India
+                 M-Block, AII, Sector 125, Noida, Uttar Pradesh 201313
                 </p>
                 
                 <div className="rounded-lg overflow-hidden shadow-md mb-6">
