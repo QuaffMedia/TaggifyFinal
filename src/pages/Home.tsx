@@ -47,7 +47,7 @@ const Home: React.FC = () => {
       href="https://www.quaffglobalservices.com/" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="text-blue-200 hover:text-white underline transition-colors duration-200"
+      className="text-blue-200 hover:text-white hover:underline transition-colors duration-200"
     >
       Quaff Global Services Company
     </a>
