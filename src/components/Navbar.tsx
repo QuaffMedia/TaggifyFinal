@@ -83,6 +83,7 @@ const Navbar: React.FC = () => {
                   <Link onClick={closeMenu} to="/services/social-media" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">Social Media Audits</Link>
                   
 <Link onClick={closeMenu} to="/services/data-security" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">Data Security</Link>
+                  <Link onClick={closeMenu} to="https://www.quaffglobalservices.com/" className="block px-4 py-2 text-gray-800 hover:bg-blue-50">Other Services</Link>
 
                 </div>
               )}
@@ -130,6 +131,7 @@ const Navbar: React.FC = () => {
       <Link onClick={closeMenu} to="/services/kpo" className="text-gray-700 hover:text-blue-700">KPO Compliance</Link>
       <Link onClick={closeMenu} to="/services/social-media" className="text-gray-700 hover:text-blue-700">Social Media Audits</Link>
       <Link onClick={closeMenu} to="/services/data-security" className="text-gray-700 hover:text-blue-700">Data Security</Link>
+      <Link onClick={closeMenu} to="https://www.quaffglobalservices.com/" className="text-gray-700 hover:text-blue-700">Other Services</Link>
     </div>
   )}
 </div>
