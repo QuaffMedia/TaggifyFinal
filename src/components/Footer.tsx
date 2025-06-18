@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
             <address className="not-italic">
               <div className="flex items-start mb-3">
                 <MapPin className="mr-2 mt-1 flex-shrink-0 text-blue-500" size={18} />
-                <span className="text-gray-400">65, Sector-12, HUDA, Panipat, Haryana - 132103, India</span>
+                <span className="text-gray-400">M-Block, AII, Sector 125, Noida, Uttar Pradesh 201313</span>
               </div>
               <div className="flex items-center mb-3">
                 <Phone className="mr-2 text-blue-500" size={18} />
