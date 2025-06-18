@@ -69,7 +69,7 @@ const About: React.FC = () => {
               <p className="text-gray-600 mb-4">
                 Registered as a private limited company under the Companies Act, 2013.
               </p>
-              <p className="font-medium">CIN: U62099HR2024PTC118110</p>
+              <p className="font-medium">CIN: U74999DL2016PTC301095</p>
               <p>Company name - Quaff Media Private limited</p >
             </div>
             
@@ -79,7 +79,7 @@ const About: React.FC = () => {
               <p className="text-gray-600 mb-4">
                 Fully compliant with Indian tax regulations and financial reporting requirements.
               </p>
-              <p className="font-medium">GST: 06AAKCT7010Q1ZW</p>
+              <p className="font-medium">GST: 07AAACQ4324N1ZA</p>
               {/* <p className="font-medium">TAN: RTKT09071G</p> */}
             </div>
             
