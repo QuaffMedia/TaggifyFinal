@@ -40,7 +40,20 @@ const Home: React.FC = () => {
     <div>
       <Hero 
         title="Leading Audit Services for Global Client-Facing Operations"
-        subtitle="As part of Quaff Global Services Company, Taggify delivers compliance-driven audit solutions for BPOs, KPOs, and social media agencies. Led by former Big Four professionals, we build trust with Global Clients through rigorous audit practices and industry expertise."
+        subtitle={
+  <>
+    As part of{' '}
+    <a 
+      href="https://www.quaffglobalservices.com/" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="text-blue-200 hover:text-white underline transition-colors duration-200"
+    >
+      Quaff Global Services Company
+    </a>
+    , Taggify delivers compliance-driven audit solutions for BPOs, KPOs, and social media agencies. Led by former Big Four professionals, we build trust with Global Clients through rigorous audit practices and industry expertise.
+  </>
+}
         backgroundImage="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       />
       
